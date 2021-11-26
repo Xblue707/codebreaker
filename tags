@@ -1,0 +1,169 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/geo/Desktop/dunjudge/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	//
+A	stepgame.cpp	/^int n, answer = INT_MAX, A[1000005], dp[1000005];$/;"	v	typeref:typename:int[1000005]
+MAX_SIZE	nprime.cpp	/^#define MAX_SIZE /;"	d	file:
+a	f7.cpp	/^int a[300000];$/;"	v	typeref:typename:int[300000]
+a	ljubomora.cpp	/^int a[300000];$/;"	v	typeref:typename:int[300000]
+addBack	guanine.cpp	/^void addBack(char x) { gene.push_back(x); }$/;"	f	typeref:typename:void
+addBigNumbers	looongnumbers.cpp	/^string addBigNumbers(string number1, string number2) {$/;"	f	typeref:typename:string
+addFront	guanine.cpp	/^void addFront(char x) { gene.push_front(x); }$/;"	f	typeref:typename:void
+answer	stepgame.cpp	/^int n, answer = INT_MAX, A[1000005], dp[1000005];$/;"	v	typeref:typename:int
+bubbleSort	bubblesort.cpp	/^void bubbleSort(int *array, int size) {$/;"	f	typeref:typename:void
+cmp	GSS.cpp	/^bool cmp(int i, int j) { return i > j; }$/;"	f	typeref:typename:bool
+cmp	f7.cpp	/^bool cmp(int x, int y) { return x > y; }$/;"	f	typeref:typename:bool
+cubicRoot	cuberoot.cpp	/^double cubicRoot(double n) {$/;"	f	typeref:typename:double
+diff	cuberoot.cpp	/^double diff(double n, double mid) {$/;"	f	typeref:typename:double
+dp	stepgame.cpp	/^int n, answer = INT_MAX, A[1000005], dp[1000005];$/;"	v	typeref:typename:int[1000005]
+dunjudge	README.md	/^# dunjudge$/;"	c
+findMin	minimum.cpp	/^int findMin(int N, int A[]) {$/;"	f	typeref:typename:int
+gene	guanine.cpp	/^deque<char> gene; \/\/ Stores the characters in gene$/;"	v	typeref:typename:deque<char>
+in	lcs.cpp	/^array<string, 2> in;$/;"	v	typeref:typename:array<string,2>
+isNumber	numberchecker.cpp	/^bool isNumber = false;$/;"	v	typeref:typename:bool
+isPrime	primalitytesting.cpp	/^bool isPrime(int num) {$/;"	f	typeref:typename:bool
+lcs	lcs.cpp	/^int lcs(const int i, const int j) {$/;"	f	typeref:typename:int
+lis	lis.cpp	/^int lis(int arr[], int n) {$/;"	f	typeref:typename:int
+ll	whichpanda.cpp	/^#define ll /;"	d	file:
+lo	xmas.cpp	/^#define lo /;"	d	file:
+main	3n+1.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	3n+1II.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	7up.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	GSS.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	adjlist.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	adjmatrix.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	anagramword.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	area.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	badpotato.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	basicbinary.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	bracket.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	bracket_ex.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	breakfast.cpp	/^int main() { cout << "PARAMECIUM"; }$/;"	f	typeref:typename:int
+main	brick.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	bubblesort.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	calculator.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	card.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	carpark.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	catletters.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	catlunch.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	ccs.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	chartoint.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	checkerboard.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	checkmultiples.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	checksquare.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	contestcalc.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	countalp.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	countstars.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	crossingroads.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	crunchy.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	cuberoot.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	descsort.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	diamond.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	digits.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	dinner.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	eleven.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	euclid.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	evenodd.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	evenorodd.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	executions.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	exponentiate.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	f7.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	farming.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	fibo.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	fizzbuzz.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	foreveralone.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	gcd.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	gecko.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	gift.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	gpa.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	greeting.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	guanine.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	hellochecker.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	helloworld.cpp	/^int main() { printf("Hello World"); }$/;"	f	typeref:typename:int
+main	helloworld_ex.cpp	/^main(){puts("Hello World");}$/;"	f
+main	hexadecimal.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	hexagon.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	homework.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lazysponge.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lcs.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	leetspeak.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lengthsort.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lis.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lis_ex.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	ljubomora.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lockcode.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	log2.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	logsort.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	longestword.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	looongnumbers.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lunch.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lunchbox.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	lvm.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	maplename.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	marker.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	maxdamage.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	maxdifference.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	maximum.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	meanstring.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	medianstring.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	mewmeow.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	multiples.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	nonsequitur.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	nprime.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	numberchecker.cpp	/^int main(void) {$/;"	f	typeref:typename:int
+main	paint.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	palindromes.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	parallelogram.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	pigeons.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	platform.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	potatoplanting.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	potatosalad.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	primalitytesting.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	prime.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	psle.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	rightangtri.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	shortestword.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	smurf.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	snack.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	spacetravel.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	splithunny.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	square.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	squarenumbers.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	squares.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	stepgame.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	strlineeqn.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	strlineeqn_easy.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	sumint.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	summation.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	sumscore.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	sumup.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	swappingcats.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	timetraveller.cpp	/^int main() { cout << "01\/12\/1982"; }$/;"	f	typeref:typename:int
+main	triangle.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	trianglenumbers.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	uniquenumbers.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	uniquenumbers_ex.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	washing.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	whichpanda.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	writelines.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	xmas.cpp	/^int main() {$/;"	f	typeref:typename:int
+memo	lcs.cpp	/^array<array<int, 1000>, 1000> memo;$/;"	v	typeref:typename:array<array<int,1000>,1000>
+merge	logsort.cpp	/^void merge(int arr[], int l, int m, int r) {$/;"	f	typeref:typename:void
+mergeSort	logsort.cpp	/^void mergeSort(int arr[], int l, int r) {$/;"	f	typeref:typename:void
+n	stepgame.cpp	/^int n, answer = INT_MAX, A[1000005], dp[1000005];$/;"	v	typeref:typename:int
+printArray	logsort.cpp	/^void printArray(int A[], int size) {$/;"	f	typeref:typename:void
+printDiamond	diamond.cpp	/^void printDiamond(int n) {$/;"	f	typeref:typename:void
+restOfPot	exponentiate.cpp	/^int restOfPot(long long a, int b, int T) {$/;"	f	typeref:typename:int
+sieve	nprime.cpp	/^void sieve(vector<int>& primes) {$/;"	f	typeref:typename:void
+snipBack	guanine.cpp	/^void snipBack(int y) { gene.erase(gene.begin() + y + 1, gene.end()); }$/;"	f	typeref:typename:void
+snipFront	guanine.cpp	/^void snipFront(int y) { gene.erase(gene.begin(), gene.begin() + y + 1); }$/;"	f	typeref:typename:void
+sums	gecko.cpp	/^array<array<int, 500>, 500> sums;$/;"	v	typeref:typename:array<array<int,500>,500>
+tile	gecko.cpp	/^int tile(const int i, const int j, const int W) {$/;"	f	typeref:typename:int
+winner	pingpong.cpp	/^string winner(string S) {$/;"	f	typeref:typename:string
