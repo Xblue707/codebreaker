@@ -145,6 +145,7 @@ main	summation.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	sumscore.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	sumup.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	swappingcats.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	test.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	timetraveller.cpp	/^int main() { cout << "01\/12\/1982"; }$/;"	f	typeref:typename:int
 main	triangle.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	trianglenumbers.cpp	/^int main() {$/;"	f	typeref:typename:int
