@@ -9,7 +9,7 @@ int main() {
 	while (n > 0) {
 		notes += (long long) n / vals[i];
 		n %= vals[i];
-		i++;
+		++i;
 	}
 	cout << notes << '\n';
 }
