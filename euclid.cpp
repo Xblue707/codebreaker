@@ -1,17 +1,21 @@
-#include <iostream>
+// hello i am writing a comment
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int array[2];
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL); // some snippet action
+	int arr[2];
 
-	for (int i = 0; i < 2; i++) cin >> array[i];
+	for (int i = 0; i < 2; i++) cin >> arr[i];
 
-	int n1 = max(array[0], array[1]);
-	int n2 = min(array[0], array[1]);
+	int a = max(arr[0], arr[1]);
+	int b = min(arr[0], arr[1]);
 
-	while (n1 != n2) {
-		if (n1 > n2) n1 -= n2;
-		else n2 -= n1;
+	while (a != b) {
+		if (a > b) a -= b;
+		else b -= a;
 	}
-	cout << n1;
+	cout << a;
 }
