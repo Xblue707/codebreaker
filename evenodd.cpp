@@ -19,6 +19,6 @@ int main() {
 		}
 	}
 	for (int j = 0; j < evenOddList.size(); j++) {
-		cout << evenOddList[j] << endl;
+		cout << evenOddList[j] << '\n';
 	}
 }

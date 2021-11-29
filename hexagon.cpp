@@ -9,7 +9,7 @@ int main() {
 		for (int j = 0; j < spaces; j++) { cout << " "; }
 		for (int i = 0; i < asterisk; i++) { cout << 'x'; }
 
-		cout << endl;
+		cout << '\n';
 		spaces--;
 		asterisk += 2;
 	}
@@ -20,7 +20,7 @@ int main() {
 		for (int j = spaces; j > -1; j--) { cout << " "; }
 		for (int i = asterisk - 3; i > -1; i--) { cout << 'x'; }
 
-		cout << endl;
+		cout << '\n';
 		spaces++;
 		asterisk -= 2;
 	}

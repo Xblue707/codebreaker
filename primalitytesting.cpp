@@ -13,7 +13,7 @@ bool isPrime(int num) {
 int main() {
 	int n;
 	cin >> n;
-	vector<int> nums = {};
+	vector<int> nums;
 
 	for (int i = 1; i <= n; i++) {
 		int a;
@@ -21,9 +21,9 @@ int main() {
 		nums.push_back(a);
 	}
 	for (int j = 0; j < nums.size(); j++) {
-		if (isPrime(nums[j])) { cout << nums[j] << " is a prime number." << endl; }
+		if (isPrime(nums[j])) { cout << nums[j] << " is a prime number." << '\n'; }
 		else if (!isPrime(nums[j])) {
-			cout << nums[j] << " is a composite number." << endl;
+			cout << nums[j] << " is a composite number." << '\n';
 		}
 	}
 }

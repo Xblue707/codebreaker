@@ -12,5 +12,5 @@ int main() {
 			pCount++;
 		}
 	}
-	cout << oCount << " " << pCount << endl;
+	cout << oCount << " " << pCount << '\n';
 }
