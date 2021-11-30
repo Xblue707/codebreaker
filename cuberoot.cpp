@@ -22,15 +22,15 @@ double cubicRoot(double n) {
 }
 
 int main() {
-	double nos[100000];
+	double nums[100000];
 	long long t;
 	cin >> t;
 
 	for (int i = 0; i < t; i++) {
 		long long n;
 		cin >> n;
-		nos[i] = n;
+		nums[i] = n;
 	}
 
-	for (int j = 0; j < t; j++) { cout << cubicRoot(nos[j]) << '\n'; }
+	for (int j = 0; j < t; j++) { cout << cubicRoot(nums[j]) << '\n'; }
 }

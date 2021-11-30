@@ -7,7 +7,7 @@ int main() {
 	if (c > 0) {
 		for (int i = 1; i < c; ++i) {
 			if (temp != 1) {
-				(temp % 2 == 0) ? temp = temp / 2 : temp = 3 * temp + 1;
+				(temp % 2 == 0) ? temp /= 2 : temp = 3 * temp + 1;
 				counter++;
 			}
 		}

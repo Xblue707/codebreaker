@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-bool cmp(int i, int j) { return i > j; }
+bool cmp(int a, int b) { return a > b; }
 
 int main() {
 	int n, sum = 0, divisor = 0, a[100];
