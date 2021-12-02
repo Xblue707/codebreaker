@@ -31,7 +31,7 @@ BitFieldColonSpacing: After
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterCaseLabel: false
-  AfterClass: true
+  AfterClass: false
   AfterControlStatement: Never
   AfterEnum: false
   AfterFunction: false
