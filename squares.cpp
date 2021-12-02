@@ -9,7 +9,7 @@ int main() {
 
 	for (int i = 1; i <= mx; i++) {
 		int root = sqrt(i);
-		if (root * root == i) cout << i << " ";
+		if (root * root == i) cout << i << ' ';
 		else continue;
 	}
 }

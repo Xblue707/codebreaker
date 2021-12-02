@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-	long int s, e, a, b;
+	long s, e, a, b;
 	cin >> s >> e >> a >> b;
 
 	for (; s <= e; s++) {
