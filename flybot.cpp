@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define MAX 1000000007
 
 int main() {
 	ios::sync_with_stdio(0);
@@ -27,7 +28,7 @@ int main() {
 				v[x][y] = 0;
 				continue;
 			}
-			v[x][y] = (v[x - 1][y] + v[x][y - 1]) % 1000000007;
+			v[x][y] = (v[x - 1][y] + v[x][y - 1]) % MAX;
 		}
 	}
 
