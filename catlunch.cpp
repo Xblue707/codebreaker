@@ -7,8 +7,6 @@ int main() {
 	priority_queue<int> rottenFishes;
 	long long int result = 0; // total satisfaction
 	long long int currGain = 0; // estimation of gains of eating all the fishes
-	// except in rottenFishes
-
 	cin >> n >> k;
 
 	for (int i = 0; i < n; i++) {

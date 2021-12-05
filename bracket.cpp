@@ -14,7 +14,7 @@ int main() {
 	for (int x; x < n; x++) {
 		c = S[x];
 
-		if (stack.empty() == true) { stack.push(c); }
+		if (stack.empty()) { stack.push(c); }
 		else if (m[c] == stack.top()) {
 			stack.pop();
 		}
@@ -22,7 +22,8 @@ int main() {
 			stack.push(c);
 		}
 	}
-	if (stack.size() == 0) { cout << "Valid"; }
+
+	if (!stack.size()) { cout << "Valid"; }
 	else {
 		cout << "Invalid";
 	}
