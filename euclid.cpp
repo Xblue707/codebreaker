@@ -1,11 +1,10 @@
-// hello i am writing a comment
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	cout.tie(NULL); // some snippet action
+	cout.tie(NULL);
 	int arr[2];
 
 	for (int i = 0; i < 2; i++) cin >> arr[i];
