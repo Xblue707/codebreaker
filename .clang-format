@@ -3,6 +3,7 @@ UseTab: ForContinuationAndIndentation
 IndentWidth: 2
 TabWidth: 2
 ColumnLimit: 80
+Standard: c++17
 AccessModifierOffset: 2
 AlignAfterOpenBracket: AlwaysBreak
 AlignArrayOfStructures: None
@@ -112,4 +113,3 @@ SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-Standard: c++17
