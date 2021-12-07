@@ -7,7 +7,7 @@ int main() {
 	int n;
 	cin >> n;
 	vector<string> evenOddList;
-	vector<int> evenDigits = {'0', '2', '4', '6', '8'};
+	vector<char> evenDigits = {'0', '2', '4', '6', '8'};
 	for (int i = 1; i <= n; i++) {
 		string a;
 		cin >> a;
