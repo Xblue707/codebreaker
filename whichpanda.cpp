@@ -16,9 +16,7 @@ int main() {
 			cur = i;
 			alone = 1;
 		}
-		else if (e == big) {
-			alone = 0;
-		}
+		else if (e == big) alone = 0;
 	}
 
 	alone ? cout << cur << '\n' : cout << "MMMMMEEEEOOOOOWWWW!!!!!\n";

@@ -29,5 +29,5 @@ int main() {
 			s = totalUni;
 		}
 	}
-	if (dirty <= totalUni) { cout << "CLEAN"; }
+	if (dirty <= totalUni) cout << "CLEAN";
 }

@@ -6,5 +6,5 @@ int main() {
 	cin >> a;
 	cin.ignore();
 	getline(cin, str);
-	for (int b = 0; b < a; b++) { cout << str << '\n'; }
+	for (int b = 0; b < a; b++) cout << str << '\n';
 }
