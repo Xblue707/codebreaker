@@ -6,14 +6,14 @@ and output if the value is a square number or not. */
 using namespace std;
 
 int main() {
-	int a;
-	cout << "";
-	cin >> a;
+  int a;
+  cout << "";
+  cin >> a;
 
-	int root = sqrt(a);
+  int root = sqrt(a);
 
-	if (root * root == a) { cout << "yes"; }
-	else {
-		cout << "no";
-	}
+  if (root * root == a) { cout << "yes"; }
+  else {
+    cout << "no";
+  }
 }

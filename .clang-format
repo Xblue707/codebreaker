@@ -1,5 +1,6 @@
 # UseTab: Always
-UseTab: ForContinuationAndIndentation
+# UseTab: ForContinuationAndIndentation
+UseTab: Never
 IndentWidth: 2
 TabWidth: 2
 ColumnLimit: 80

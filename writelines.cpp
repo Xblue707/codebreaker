@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-	int a;
-	string str;
-	cin >> a;
-	cin.ignore();
-	getline(cin, str);
-	for (int b = 0; b < a; b++) cout << str << '\n';
+  int a;
+  string str;
+  cin >> a;
+  cin.ignore();
+  getline(cin, str);
+  for (int b = 0; b < a; b++) cout << str << '\n';
 }
