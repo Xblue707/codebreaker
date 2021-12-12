@@ -20,5 +20,5 @@ int main() {
     cin >> a >> b >> m;
     num[i] = restOfPot(a, b, m);
   }
-  for (int j = 0; j < n; ++j) { cout << num[j] << '\n'; }
+  for (int j = 0; j < n; ++j) cout << num[j] << '\n';
 }

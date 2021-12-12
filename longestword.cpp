@@ -5,7 +5,7 @@ int main() {
   int n, wordLength = 0;
   cin >> n;
   string longestWord;
-  for (int i = 1; i <= n; i++) {
+  for (int i = 0; i < n; i++) {
     string s;
     cin >> s;
     if (wordLength < s.size()) {

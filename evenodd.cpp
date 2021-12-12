@@ -11,14 +11,10 @@ int main() {
   for (int i = 1; i <= n; i++) {
     string a;
     cin >> a;
-    if (find(evenDigits.begin(), evenDigits.end(), a.back()) != evenDigits.end()) {
+    if (find(evenDigits.begin(), evenDigits.end(), a.back()) != evenDigits.end())
       evenOddList.push_back("even");
-    }
-    else {
-      evenOddList.push_back("odd");
-    }
+    else evenOddList.push_back("odd");
   }
-  for (int j = 0; j < evenOddList.size(); j++) {
-    cout << evenOddList[j] << '\n';
-  }
+
+  for (int j = 0; j < evenOddList.size(); j++) cout << evenOddList[j] << '\n';
 }

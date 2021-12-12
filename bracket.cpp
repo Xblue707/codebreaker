@@ -3,7 +3,7 @@
 #include <stack>
 using namespace std;
 int main() {
-  stack<char> stack;
+  stack<char> bracks;
   map<char, char> m;
   m['('] = 'x';
   m[')'] = '(';
@@ -14,17 +14,11 @@ int main() {
   for (int x; x < n; x++) {
     c = S[x];
 
-    if (stack.empty()) { stack.push(c); }
-    else if (m[c] == stack.top()) {
-      stack.pop();
-    }
-    else {
-      stack.push(c);
-    }
+    if (bracks.empty()) bracks.push(c);
+    else if (m[c] == bracks.top()) bracks.pop();
+    else bracks.push(c);
   }
 
-  if (!stack.size()) { cout << "Valid"; }
-  else {
-    cout << "Invalid";
-  }
+  if (!bracks.size()) cout << "Valid";
+  else cout << "Invalid";
 }

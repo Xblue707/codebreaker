@@ -19,5 +19,5 @@ int main() {
 
   sort(serialno, serialno + n, greater<int>());
 
-  for (int i = 0; i < n; i++) { cout << m[serialno[i]] << '\n'; }
+  for (int i = 0; i < n; i++) cout << m[serialno[i]] << '\n';
 }

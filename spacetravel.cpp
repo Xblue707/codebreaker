@@ -14,9 +14,9 @@ int main() {
     cin >> t;
     tripTime.push_back(t);
   }
-  if (s == 0) {
-    for (int j = 0; j < tripTime.size(); j++) { total += (2 * tripTime[j]); }
-  }
+  if (s == 0)
+    for (int j = 0; j < tripTime.size(); j++) total += (2 * tripTime[j]);
+
   else {
     sort(tripTime.rbegin(), tripTime.rend());
     for (int j = 0; j < tripTime.size(); j++) {
@@ -25,5 +25,6 @@ int main() {
       total += totalA;
     }
   }
+
   cout << total;
 }

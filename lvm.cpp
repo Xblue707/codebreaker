@@ -36,20 +36,21 @@ int main() {
     else if (inst.compare("IFZERO") == 0) {
       top = lvm.top();
       lvm.pop();
-      if (top == 0) { index = cmds[index].second; }
+      if (top == 0) index = cmds[index].second;
       else {
         index++;
       }
     }
     else {
-      if (inst.compare("PUSH") == 0) { lvm.push(cmds[index].second); }
+      if (inst.compare("PUSH") == 0) lvm.push(cmds[index].second);
+
       if (inst.compare("STORE") == 0) {
         reg = lvm.top();
         lvm.pop();
       }
-      else if (inst.compare("LOAD") == 0) {
-        lvm.push(reg);
-      }
+
+      else if (inst.compare("LOAD") == 0) lvm.push(reg);
+
       else if (inst.compare("TIMES") == 0) {
         top = lvm.top();
         lvm.pop();
@@ -57,6 +58,7 @@ int main() {
         lvm.pop();
         lvm.push(top);
       }
+
       else if (inst.compare("PLUS") == 0) {
         top = lvm.top();
         lvm.pop();
@@ -64,6 +66,7 @@ int main() {
         lvm.pop();
         lvm.push(top);
       }
+
       index++;
     }
   }

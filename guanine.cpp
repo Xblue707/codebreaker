@@ -51,7 +51,6 @@ int main() {
     }
   }
 
-  for (deque<char>::iterator it = result.begin(); it != result.end(); ++it) {
+  for (deque<char>::iterator it = result.begin(); it != result.end(); ++it)
     cout << *it << "\n";
-  }
 }

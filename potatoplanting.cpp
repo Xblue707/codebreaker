@@ -6,7 +6,6 @@ int main() {
   for (int i = 1; i <= h * w; i++) {
     if (i <= n) cout << 'X';
     else cout << 'O';
-
     if (i % w == 0) cout << '\n';
   }
 }

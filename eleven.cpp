@@ -17,8 +17,7 @@ int main() {
     }
   }
 
-  if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0) {
+  if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0)
     cout << "YES";
-  }
   else cout << "NO";
 }

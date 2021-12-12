@@ -12,9 +12,8 @@ int main() {
   cin >> h >> w;
 
   array<array<int, 500>, 500> tiles;
-  for (int i = 0; i < h; i++) {
-    for (int j = 0; j < w; j++) { cin >> tiles[i][j]; }
-  }
+  for (int i = 0; i < h; i++)
+    for (int j = 0; j < w; j++) cin >> tiles[i][j];
 
   copy(tiles[0].begin(), tiles[1].end(), sums[0].begin());
 
@@ -27,6 +26,6 @@ int main() {
   }
 
   int mx = 0;
-  for (int i = 0; i < w; i++) { mx = max(mx, sums[h - 1][i]); }
+  for (int i = 0; i < w; i++) mx = max(mx, sums[h - 1][i]);
   cout << mx;
 }

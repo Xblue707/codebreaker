@@ -6,9 +6,8 @@ int main() {
   int price[20000], increment[20000];
 
   cin >> n;
-  for (int i = 0; i < n; i++) { cin >> price[i]; }
-
-  for (int i = 0; i < n; i++) { cin >> increment[i]; }
+  for (int i = 0; i < n; i++) cin >> price[i];
+  for (int i = 0; i < n; i++) cin >> increment[i];
 
   for (int i = 0; i < n; i++) {
     int e = -1, ind = -1;
@@ -18,6 +17,7 @@ int main() {
         ind = j;
       }
     }
+
     total += price[ind] + e * i;
     price[ind] = -1;
     increment[ind] = -1;

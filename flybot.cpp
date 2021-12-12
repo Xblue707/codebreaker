@@ -17,7 +17,7 @@ int main() {
     for (int wi = 1; wi <= w; wi++) {
       char c;
       cin >> c;
-      if (c == 'X') { v[hi][wi] = -1; }
+      if (c == 'X') v[hi][wi] = -1;
     }
   }
 

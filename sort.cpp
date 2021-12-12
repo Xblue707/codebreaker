@@ -417,8 +417,8 @@ long long BigInteger::toInt(string s) {
 
 int main() {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
 
   uint32_t n;
   cin >> n;
@@ -433,5 +433,5 @@ int main() {
 
   sort(v.begin(), v.end());
 
-  for (BigInteger elem : v) { cout << string(elem) << ' '; }
+  for (BigInteger elem : v) cout << string(elem) << ' ';
 }

@@ -4,7 +4,7 @@ int main() {
   int n, pigeons = 0, events;
   cin >> n >> events;
   bool fenceBreak = 0, ultimate = 0;
-  for (int i = 1; i <= events; i++) {
+  for (int i = 0; i < events; i++) {
     string s;
     cin >> s;
     if (s == "LAND") pigeons++;

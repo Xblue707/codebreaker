@@ -35,7 +35,7 @@ int main() {
     }
   }
 
-  if (cars[n - 1] == 1) { k++; }
+  if (cars[n - 1] == 1) k++;
 
   for (int i = s; i < k; i++) {
     ans += gaps.top();

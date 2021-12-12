@@ -8,13 +8,13 @@ int main() {
 
   int dirty = 0, totalUni = s;
 
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     string command;
     cin >> command;
     commands.push_back(command);
   }
 
-  for (int j = 0; j < commands.size(); ++j) {
+  for (int j = 0; j < commands.size(); j++) {
     if (commands[j] == "USE") {
       dirty++;
       s--;

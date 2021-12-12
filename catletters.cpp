@@ -18,7 +18,7 @@ int main() {
   }
 
 
-  double stuff = double(counter) / double(master.size());
+  double stuff = (double) counter / (double) master.size();
   stuff *= 100;
   stuff = int(floor(stuff));
 

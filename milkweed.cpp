@@ -15,7 +15,7 @@ int main() {
   int w, h, sc, sr;
   cin >> w >> h >> sc >> sr;
   sr = h - sr;
-  --sc;
+  sc--;
   vector<vb> grid(h, vb(w));
   for (int i = 0; i < h; ++i) {
     for (int j = 0; j < w; ++j) {

@@ -32,5 +32,5 @@ int main() {
     nums[i] = n;
   }
 
-  for (int j = 0; j < t; j++) { cout << cubicRoot(nums[j]) << '\n'; }
+  for (int j = 0; j < t; j++) cout << cubicRoot(nums[j]) << '\n';
 }

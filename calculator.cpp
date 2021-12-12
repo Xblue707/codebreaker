@@ -6,10 +6,6 @@ int main() {
   cin >> a >> op >> b;
 
   if (op == '+') { cout << a + b; }
-  else if (op == '-') {
-    cout << a - b;
-  }
-  else if (op == '*') {
-    cout << a * b;
-  }
+  else if (op == '-') cout << a - b;
+  else if (op == '*') cout << a * b;
 }

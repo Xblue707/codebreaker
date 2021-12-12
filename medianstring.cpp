@@ -7,8 +7,7 @@ int main() {
   for (int i = 1; i <= n; i++) {
     int m;
     cin >> m;
-
-    if (i == midpos) { mid = m; }
+    if (i == midpos) mid = m;
   }
   cout << mid;
 }

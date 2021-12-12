@@ -9,6 +9,7 @@ int main() {
     if (s == "MEW") maleCount += 1;
     else if (s == "MEOW") femaleCount += 1;
   }
+
   if (maleCount == 0) cout << "OMG MEEEAHHHH!!!!\n";
   else cout << femaleCount / maleCount;
 }

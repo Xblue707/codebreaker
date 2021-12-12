@@ -10,6 +10,7 @@ int main() {
     cin >> name1 >> score;
     scoresNames[name1] = score;
   }
+
   int m;
   cin >> m;
   for (int j = 0; j < m; j++) {

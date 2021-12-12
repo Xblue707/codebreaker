@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
   ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+  cin.tie(nullptr);
   int n, k;
   cin >> n;
 
@@ -21,7 +21,7 @@ int main() {
   }
 
   if (!check)
-    for (auto i : smurfs) { cout << i << " "; }
+    for (auto i : smurfs) cout << i << " ";
   else
-    for (int i = smurfs.size() - 1; i >= 0; i--) { cout << smurfs[i] << " "; }
+    for (int i = smurfs.size() - 1; i >= 0; i--) cout << smurfs[i] << " ";
 }

@@ -18,9 +18,8 @@ int main() {
   }
 
   for (auto i : v) {
-    for (int m = 0; m < i.size(); m++) {
+    for (int m = 0; m < i.size(); m++)
       m == i.size() - 1 ? cout << i[m] : cout << i[m] << ' ';
-    }
     cout << '\n';
   }
 }

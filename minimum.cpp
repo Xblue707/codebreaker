@@ -4,7 +4,7 @@ int findMin(int N, int A[]) {
   int m;
   m = A[0];
   for (int i = 1; i < N; ++i) {
-    if (A[i] < m) { m = A[i]; }
+    if (A[i] < m) m = A[i];
   }
   return m;
 }

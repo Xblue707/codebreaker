@@ -7,35 +7,35 @@ int main() {
 
   if (command == 'A') {
     cout << 'o';
-    for (int i = 0; i < name.size(); i++) { cout << '-'; }
+    for (int i = 0; i < name.size(); i++) cout << '-';
     cout << 'o';
     cout << "\n|" << name << "|\n";
     cout << 'o';
-    for (int i = 0; i < name.size(); i++) { cout << '-'; }
+    for (int i = 0; i < name.size(); i++) cout << '-';
     cout << 'o';
   }
 
   else if (command == 'K') {
     cout << 'x';
-    for (int i = 0; i < name.size(); i++) { cout << '-'; }
+    for (int i = 0; i < name.size(); i++) cout << '-';
     cout << 'x';
     cout << "\n|" << name << "|\n";
     cout << 'x';
-    for (int i = 0; i < name.size(); i++) { cout << '-'; }
+    for (int i = 0; i < name.size(); i++) cout << '-';
     cout << 'x';
   }
 
   else if (command == 'H') {
     if (name.size() % 2 != 0) {
-      for (int i = 0; i < (name.size() + 2 - 1) / 2; i++) { cout << "ox"; }
+      for (int i = 0; i < (name.size() + 2 - 1) / 2; i++) cout << "ox";
       cout << "o\nx" << name << "x\n";
-      for (int i = 0; i < (name.size() + 2 - 1) / 2; i++) { cout << "ox"; }
+      for (int i = 0; i < (name.size() + 2 - 1) / 2; i++) cout << "ox";
       cout << 'o';
     }
     else if (name.size() % 2 == 0) {
-      for (int i = 0; i < (name.size() + 2) / 2; i++) { cout << "ox"; }
+      for (int i = 0; i < (name.size() + 2) / 2; i++) cout << "ox";
       cout << "\nx" << name << "o\n";
-      for (int i = 0; i < (name.size() + 2) / 2; i++) { cout << "ox"; }
+      for (int i = 0; i < (name.size() + 2) / 2; i++) cout << "ox";
     }
   }
 
@@ -46,8 +46,7 @@ int main() {
         if (i != (name.size() + 1) / 2) cout << '-';
         else cout << '+';
       }
-      cout << "o\n|" << name << "|\n";
-      cout << 'o';
+      cout << "o\n|" << name << "|\no";
       for (int i = 1; i <= name.size(); i++) {
         if (i != (name.size() + 1) / 2) cout << '-';
         else cout << '+';
@@ -61,8 +60,7 @@ int main() {
         if (i != (name.size()) / 2) cout << '-';
         else cout << '+';
       }
-      cout << "o\n|" << name << "|\n";
-      cout << 'o';
+      cout << "o\n|" << name << "|\no";
       for (int i = 1; i <= name.size(); i++) {
         if (i != (name.size()) / 2) cout << '-';
         else cout << '+';

@@ -8,7 +8,7 @@ int main() {
   int n;
   cin >> n;
   vector<string> nums;
-  for (int i = 1; i <= n; i++) {
+  for (int i = 0; i < n; i++) {
     string num;
     cin >> num;
     num.erase(num.begin());
@@ -23,6 +23,7 @@ int main() {
         break;
       }
     }
+
     if (isHex) cout << "Hexadecimal\n";
     else cout << "Not Hexadecimal\n";
   }

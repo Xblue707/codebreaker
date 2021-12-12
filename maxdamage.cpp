@@ -21,7 +21,5 @@ int main() {
 
   maxDamage = weapon_multi * ((4 * primary) + secondary) * (sum_attack / 100);
 
-  cout << fixed << setprecision(2);
-
-  cout << maxDamage;
+  cout << fixed << setprecision(2) << maxDamage;
 }

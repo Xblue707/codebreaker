@@ -17,5 +17,5 @@ int main() {
     x[g] = i;
   }
 
-  for (int j = 1; j <= x.size(); j++) { cout << x[j] << '\n'; }
+  for (int j = 1; j <= x.size(); j++) cout << x[j] << '\n';
 }
