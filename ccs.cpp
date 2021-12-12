@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main() {
   int n, q, x, y;
   string events;
@@ -14,10 +15,12 @@ int main() {
       cin >> x;
       cats.erase(x);
     }
+
     else if (events.compare("SLEEP") == 0) {
       cin >> x;
       cats.insert(x);
     }
+
     else if (events.compare("TRANSMIT") == 0) {
       cin >> x >> y;
 

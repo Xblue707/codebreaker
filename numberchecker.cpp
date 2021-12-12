@@ -5,9 +5,11 @@
 #include <locale>
 using namespace std;
 bool isNumber = false;
-int main(void) {
+
+int main() {
   string s;
   cin >> s;
+
   for (int i = 0; i < s.size(); i++) {
     if (std::isdigit(s[i])) { isNumber = true; }
     else {
@@ -15,6 +17,7 @@ int main(void) {
       break;
     }
   }
+
   if (isNumber) {
     int num = std::stoi(s);
     int ans = num * 2;

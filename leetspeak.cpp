@@ -3,6 +3,7 @@
 #include <regex>
 #include <vector>
 using namespace std;
+
 int main() {
   bool leet = 0;
   regex acceptable("^[A-Za-z]+");

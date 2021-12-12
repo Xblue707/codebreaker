@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   char left = '/', right = '\\';
   int spacesBtwn = 0, spacesBefore = 0;

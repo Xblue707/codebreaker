@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, k, gifts = 0, timings[100];
   cin >> n >> k >> timings[0];

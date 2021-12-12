@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   long s, e, a, b;
   cin >> s >> e >> a >> b;

@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, c, temp, counter = 1;
   cin >> n >> c;

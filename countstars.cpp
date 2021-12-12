@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int h, w, count = 0;
   cin >> h >> w;

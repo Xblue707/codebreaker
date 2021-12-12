@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+
 int main() {
   int l, mx;
   cin >> l;

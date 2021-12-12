@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+
 int main() {
   string bin;
   cin >> bin;

@@ -11,7 +11,6 @@ void snipBack(int y) { gene.erase(gene.begin() + y + 1, gene.end()); }
 
 void snipFront(int y) { gene.erase(gene.begin(), gene.begin() + y + 1); }
 
-
 int main() {
   ios::sync_with_stdio(0);
   cin.tie(0);

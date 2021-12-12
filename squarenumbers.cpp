@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   long n, ans = 0;
   cin >> n;

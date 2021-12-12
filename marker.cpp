@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, sScore = 0, pScore = 0;
   cin >> n;

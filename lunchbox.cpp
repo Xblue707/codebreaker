@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int main() {
   int n, m, counter = 0;
   cin >> n >> m;

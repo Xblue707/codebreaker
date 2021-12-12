@@ -2,6 +2,7 @@
 #include <map>
 #include <stack>
 using namespace std;
+
 int main() {
   stack<char> bracks;
   map<char, char> m;

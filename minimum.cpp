@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int findMin(int N, int A[]) {
   int m;
   m = A[0];

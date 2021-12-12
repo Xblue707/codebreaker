@@ -1,7 +1,7 @@
 #include <iostream>
 #include <map>
-#define lg long
 using namespace std;
+#define lg long
 
 int main() {
   ios::sync_with_stdio(0);

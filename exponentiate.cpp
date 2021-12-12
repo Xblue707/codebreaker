@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int expo(long long a, int b, int T) {
   a %= T;
   long long R = 1;

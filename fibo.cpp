@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int mod, n;
   long long fibo[2000];

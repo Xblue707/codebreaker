@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 void merge(int arr[], int l, int m, int r) {
   int n1 = m - l + 1, n2 = r - m;
 
@@ -38,7 +37,6 @@ void merge(int arr[], int l, int m, int r) {
     k++;
   }
 }
-
 
 void mergeSort(int arr[], int l, int r) {
   if (l >= r) return;

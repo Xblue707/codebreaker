@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, s, e;
   cin >> n >> s >> e;

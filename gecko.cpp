@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 array<array<int, 500>, 500> sums;
 
 int tile(const int i, const int j, const int W) {

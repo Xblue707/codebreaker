@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 void printDiamond(int n) {
   int i, j, s;
 

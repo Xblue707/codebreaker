@@ -1,11 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ll long long
 
 int main() {
   int n, k, t;
   priority_queue<int> rottenFishes;
-  long long result = 0; // total satisfaction
-  long long currGain = 0; // estimation of gains of eating all the fishes
+  ll result = 0; // total satisfaction
+  ll currGain = 0; // estimation of gains of eating all the fishes
   cin >> n >> k;
 
   for (int i = 0; i < n; i++) {

@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main() {
   map<string, int> scoresNames;
   int n, total = 0, avg = 0;

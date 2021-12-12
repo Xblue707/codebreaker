@@ -1,6 +1,7 @@
 #include <cmath>
 #include <iostream>
 using namespace std;
+
 int main() {
   int a, b, c, d;
   bool aPrime = 0, bPrime = 0, cPrime = 0, dPrime = 0;

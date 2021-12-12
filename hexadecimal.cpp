@@ -2,6 +2,7 @@
 #include <locale>
 #include <regex>
 #include <vector>
+
 using namespace std;
 int main() {
   bool isHex = 0;

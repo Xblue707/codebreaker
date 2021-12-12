@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, a[3000000];
   cin >> n;

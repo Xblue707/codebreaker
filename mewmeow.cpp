@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int main() {
   int n, maleCount = 0, femaleCount = 0;
   cin >> n;
