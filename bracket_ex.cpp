@@ -13,11 +13,10 @@ int main() {
   string S;
 
   int n;
-  char c;
   cin >> n >> S;
 
-  for (int x; x < n; x++) {
-    c = S[x];
+  for (int x = 0; x < n; x++) {
+    char c = S[x];
     if (pairs.empty()) pairs.push(c);
     else if (m[c] == pairs.top()) pairs.pop();
     else pairs.push(c);

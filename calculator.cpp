@@ -6,7 +6,9 @@ int main() {
   char op;
   cin >> a >> op >> b;
 
-  if (op == '+') { cout << a + b; }
-  else if (op == '-') cout << a - b;
-  else if (op == '*') cout << a * b;
+  switch (op) {
+    case '+': cout << a + b; break;
+    case '-': cout << a - b; break;
+    case '*': cout << a * b; break;
+  }
 }
