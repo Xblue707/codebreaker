@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
   int i, j, rows;
-  char b, w, t;
+  char b, w, temp;
   b = 'o';
   w = 'x';
 
@@ -11,12 +11,12 @@ int main() {
   for (i = 1; i <= rows; i++) {
     for (j = 1; j <= rows; j++) {
       if (j % 2 != 0) cout << b;
-      else if (j % 2 == 0) cout << w;
+      else cout << w;
     }
 
-    t = b;
+    temp = b;
     b = w;
-    w = t;
+    w = temp;
     cout << '\n';
   }
 }

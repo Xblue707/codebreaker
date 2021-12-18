@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define ll long long
-#define ld long double
 #define vi vector<int>
 #define vb vector<bool>
 #define ii pair<int, int>
@@ -17,8 +15,8 @@ int main() {
   sr = h - sr;
   sc--;
   vector<vb> grid(h, vb(w));
-  for (int i = 0; i < h; ++i) {
-    for (int j = 0; j < w; ++j) {
+  for (int i = 0; i < h; i++) {
+    for (int j = 0; j < w; j++) {
       char c;
       cin >> c;
       grid[i][j] = c == '.';
@@ -35,10 +33,9 @@ int main() {
     q.pop();
     ans = max(ans, dist[r][c]);
     int ndist = dist[r][c] + 1;
-    for (int dr = -1; dr <= 1; ++dr) {
-      for (int dc = -1; dc <= 1; ++dc) {
-        int nr = dr + r;
-        int nc = dc + c;
+    for (int dr = -1; dr <= 1; dr++) {
+      for (int dc = -1; dc <= 1; dc++) {
+        int nr = dr + r, nc = dc + c;
         if (nr < 0 || nc < 0 || nr >= h || nc >= w) continue;
         if (!grid[nr][nc]) continue;
         if (ndist >= dist[nr][nc]) continue;
