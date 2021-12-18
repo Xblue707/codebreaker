@@ -11,7 +11,7 @@ int main() {
 
   vector<int> v[n];
 
-  for (int j = 0; j < e; ++j) {
+  for (int j = 0; j < e; j++) {
     int k, l;
     cin >> k >> l;
     v[k - 1].push_back(l);

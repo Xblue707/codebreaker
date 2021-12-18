@@ -8,7 +8,7 @@ int main() {
   int n, sum = 0, divisor = 0, a[100];
   bool toggle = 1;
   cin >> n;
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     cin >> a[i];
     sum += a[i];
   }
@@ -16,7 +16,7 @@ int main() {
   sort(a, a + n, cmp);
 
   if (n > 3) {
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; i++) {
       if ((i + 1) % 4 == 0) sum -= a[i];
     }
   }

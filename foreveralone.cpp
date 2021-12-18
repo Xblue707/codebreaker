@@ -12,12 +12,12 @@ int main() {
   set<int> cats;
 
   // get the input
-  for (int j = 0; j < m; ++j) {
-    int k, l;
-    cin >> k >> l;
-    if (k != l) {
+  for (int i = 0; i < m; i++) {
+    int j, k;
+    cin >> j >> k;
+    if (j != k) {
+      cats.insert(j);
       cats.insert(k);
-      cats.insert(l);
     }
   }
   int ans = n - cats.size();

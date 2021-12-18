@@ -6,7 +6,7 @@ int main() {
   cin >> n;
 
   long long total = 0;
-  for (int i = 0; i < n; ++i) {
+  for (int i = 0; i < n; i++) {
     int a;
     cin >> a;
     total += a;

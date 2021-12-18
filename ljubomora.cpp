@@ -10,7 +10,7 @@ int main() {
 
   int n, m, mx = 0;
   cin >> n >> m;
-  for (int i = 0; i < m; ++i) {
+  for (int i = 0; i < m; i++) {
     cin >> a[i];
     if (mx < a[i]) mx = a[i];
   }
@@ -20,7 +20,7 @@ int main() {
   while (lo < hi) {
     int y = (lo + hi) / 2;
     int n2 = 0;
-    for (int i = 0; i < m; ++i) n2 += (a[i] + y - 1) / y;
+    for (int i = 0; i < m; i++) n2 += (a[i] + y - 1) / y;
     n2 > n ? lo = y + 1 : hi = y;
   }
 
