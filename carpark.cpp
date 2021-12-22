@@ -15,7 +15,7 @@ int main() {
   }
 
   while (1) {
-    if (cars[lol] == 1) { break; }
+    if (cars[lol] == 1) break;
     cars[lol] = -1;
     lol++;
   }

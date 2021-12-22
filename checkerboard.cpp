@@ -8,7 +8,7 @@ int main() {
   w = 'x';
 
   cin >> rows;
-  for (i = 1; i <= rows; i++) {
+  for (i = 0; i < rows; i++) {
     for (j = 1; j <= rows; j++) {
       if (j % 2 != 0) cout << b;
       else cout << w;
