@@ -19,5 +19,5 @@ int main() {
 
   sort(words.begin(), words.end());
 
-  for (int j = 0; j < words.size(); j++) cout << words[j];
+  for (auto j : words) cout << j;
 }

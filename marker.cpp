@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
 
-void incScore(int score, int n1, int n2, int expected, char op) {
+void incScore(int score, int x, int y, int expected, char op) {
   switch (op) {
     case '+':
-      if (n1 + n2 == expected) score++;
+      if (x + y == expected) score++;
       break;
     case '-':
-      if (n1 - n2 == expected) score++;
+      if (x - y == expected) score++;
       break;
     case '*':
-      if (n1 * n2 == expected) score++;
+      if (x * y == expected) score++;
       break;
     case '/':
-      if (n1 / n2 == expected) score++;
+      if (x / y == expected) score++;
       break;
   }
 }

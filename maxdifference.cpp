@@ -13,5 +13,5 @@ int main() {
     nums.push_back(k);
   }
   sort(nums.begin(), nums.end());
-  cout << nums.back() - nums[0];
+  cout << nums.back() - nums.front();
 }

@@ -14,7 +14,6 @@ int main() {
     v.push_back(m);
   }
 
-  for (const auto &i : v) sort(v.begin(), v.end(), greater<>());
-
-  for (int j = 0; j < n; j++) cout << v[j] << ' ';
+  sort(v.begin(), v.end(), greater<>());
+  for (auto j : v) cout << j << ' ';
 }

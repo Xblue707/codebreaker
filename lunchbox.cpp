@@ -7,7 +7,7 @@ int main() {
   int n, m, counter = 0;
   cin >> n >> m;
   vector<int> lunches;
-  for (int i = 1; i <= m; i++) {
+  for (int i = 0; i < m; i++) {
     int lunch;
     cin >> lunch;
     lunches.push_back(lunch);

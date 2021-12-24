@@ -8,7 +8,7 @@ int main() {
 
   // first half
   for (int k = 0; k < n; k++) {
-    for (int j = 0; j < spaces; j++) cout << " ";
+    for (int j = 0; j < spaces; j++) cout << ' ';
     for (int i = 0; i < asterisks; i++) cout << 'x';
 
     cout << '\n';
@@ -21,7 +21,7 @@ int main() {
 
   // bottom half, the same but reversed
   for (int k = n - 2; k > -1; k--) {
-    for (int j = spaces; j > -1; j--) cout << " ";
+    for (int j = spaces; j > -1; j--) cout << ' ';
     for (int i = asterisks - 3; i > -1; i--) cout << 'x';
 
     cout << '\n';

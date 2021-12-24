@@ -5,8 +5,7 @@ using namespace std;
 bool cmp(int a, int b) { return a > b; }
 
 int main() {
-  int n, sum = 0, divisor = 0, a[100];
-  bool toggle = 1;
+  int n, sum = 0, a[100];
   cin >> n;
   for (int i = 0; i < n; i++) {
     cin >> a[i];

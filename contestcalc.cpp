@@ -2,14 +2,14 @@
 using namespace std;
 
 int main() {
-  map<string, int> scoresNames;
+  map<string, int> table;
   int n, total = 0, avg = 0;
   cin >> n;
   for (int i = 0; i < n; i++) {
-    string name1;
+    string x;
     int score;
-    cin >> name1 >> score;
-    scoresNames[name1] = score;
+    cin >> x >> score;
+    table[x] = score;
   }
 
   int m;
@@ -17,7 +17,7 @@ int main() {
   for (int j = 0; j < m; j++) {
     string name;
     cin >> name;
-    total += scoresNames.find(name)->second;
+    total += table.find(name)->second;
   }
   avg = total / m;
   cout << avg;

@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-  string s, first = "", second = "";
+  string s, first, second;
   cin >> s;
   // ensure that all characters in string are lowercase, for easier comparison
   for (int j = 0; j < s.size(); j++) s[j] = tolower(s[j]);

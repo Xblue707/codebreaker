@@ -21,5 +21,6 @@ int main() {
     cin >> a >> b >> m;
     num[i] = expo(a, b, m);
   }
+
   for (int j = 0; j < n; j++) cout << num[j] << '\n';
 }

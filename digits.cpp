@@ -13,5 +13,5 @@ int main() {
     solutions.push_back((int) (b * log10(a)) + 1);
   }
 
-  for (int i = 0; i < solutions.size(); i++) cout << solutions[i] << '\n';
+  for (auto i : solutions) cout << i << '\n';
 }

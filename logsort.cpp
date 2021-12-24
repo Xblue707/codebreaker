@@ -46,20 +46,14 @@ void mergeSort(int arr[], int l, int r) {
   merge(arr, l, m, r);
 }
 
-void printArray(int A[], int size) {
-  for (int i = 0; i < size; i++) cout << A[i] << '\n';
-}
-
 int main() {
   ios::sync_with_stdio(0);
   cin.tie(0);
 
-  int arr[50000];
-  int n;
+  int arr[50000], n;
   cin >> n;
-  int arr_size = sizeof(arr) / sizeof(arr[0]);
   for (int i = 0; i < n; i++) cin >> arr[i];
 
   mergeSort(arr, 0, n - 1);
-  printArray(arr, n);
+  for (int i = 0; i < n; i++) cout << arr[i] << '\n';
 }

@@ -15,8 +15,8 @@ int main() {
     s += a;
   }
 
-  for (int j = 0; j < 26; j++) {
-    size_t count = std::count(s.begin(), s.end(), letters[j]);
-    printf("%c %lu\n", letters[j], count);
+  for (auto j : s) {
+    size_t count = std::count(s.begin(), s.end(), j);
+    printf("%c %lu\n", j, count);
   }
 }

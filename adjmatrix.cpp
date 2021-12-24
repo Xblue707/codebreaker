@@ -6,10 +6,10 @@ int main() {
   cin >> n >> e;
 
   // adjacency matrix
-  int adj[n][n];
+  bool adj[n][n];
 
   for (int l = 0; l < n; l++) {
-    for (int o = 0; o < n; o++) { adj[l][o] = 0; }
+    for (int o = 0; o < n; o++) adj[l][o] = 0;
   }
 
   for (int i = 0; i < e; i++) {
@@ -20,7 +20,7 @@ int main() {
   }
 
   for (int j = 0; j < n; j++) {
-    for (int k = 0; k < n; k++) cout << adj[j][k];
+    for (int k = 0; k < n; k++) cout << (int) adj[j][k];
     cout << '\n';
   }
 

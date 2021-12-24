@@ -16,7 +16,7 @@ int main() {
   cin.tie(0);
 
   int n = 0;
-  string instruction = "";
+  string instruction;
   deque<char> result;
 
   cin >> n;
@@ -24,27 +24,27 @@ int main() {
   for (int i = 0; i < n; i++) {
     cin >> instruction;
     if (instruction.compare("ADD_BACK") == 0) {
-      char dna = '0';
+      char dna;
       cin >> dna;
       addBack(dna);
     }
     else if (instruction.compare("ADD_FRONT") == 0) {
-      char dna = '0';
+      char dna;
       cin >> dna;
       addFront(dna);
     }
     else if (instruction.compare("SNIP_BACK") == 0) {
-      int Y = 0;
+      int Y;
       cin >> Y;
       snipBack(Y);
     }
     else if (instruction.compare("SNIP_FRONT") == 0) {
-      int Y = 0;
+      int Y;
       cin >> Y;
       snipFront(Y);
     }
     else if (instruction.compare("QUERY") == 0) {
-      int Z = 0;
+      int Z;
       cin >> Z;
       result.push_back(gene[Z]);
     }

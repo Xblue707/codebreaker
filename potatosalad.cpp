@@ -4,16 +4,16 @@
 using namespace std;
 
 int main() {
-  int n, d, maxMass = 0;
+  int n, d, mx = 0;
   cin >> n >> d;
-  vector<int> pMass;
+  vector<int> p;
   for (int i = 0; i < n; i++) {
     int mass;
     cin >> mass;
-    pMass.push_back(mass);
+    p.push_back(mass);
   }
-  sort(pMass.begin(), pMass.end(), greater<>());
-  for (int j = 0; j < d; j++) maxMass += pMass[j];
+  sort(p.begin(), p.end(), greater<>());
+  for (int j = 0; j < d; j++) mx += p[j];
 
-  cout << maxMass;
+  cout << mx;
 }

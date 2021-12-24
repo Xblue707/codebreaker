@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void printDiamond(int n) {
-  int i, j, s;
+int main() {
+  int n, i, j, s;
+  cin >> n;
 
   for (i = 1; i <= n; i++) {
     for (s = 0; s < n - i; s++) cout << ' ';
@@ -15,11 +16,4 @@ void printDiamond(int n) {
     for (j = 0; j < i * 2 - 1; j++) cout << '*';
     cout << '\n';
   }
-}
-
-int main() {
-  int n;
-  cin >> n;
-  printDiamond(n);
-  return 0;
 }

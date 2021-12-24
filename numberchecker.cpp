@@ -18,11 +18,7 @@ int main() {
     }
   }
 
-  if (isNumber) {
-    int num = std::stoi(s);
-    int ans = num * 2;
-    cout << ans;
-  }
+  if (isNumber) { cout << std::stoi(s) * 2; }
   else {
     for (int i = 0; i < s.size(); i++) { putchar(toupper(s[i])); }
   }

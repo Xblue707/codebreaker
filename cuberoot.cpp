@@ -2,11 +2,12 @@
 using namespace std;
 
 double diff(double n, double mid) {
-  if (n > (mid * mid * mid)) return (n - (mid * mid * mid));
-  else return ((mid * mid * mid) - n);
+  double temp = mid * mid * mid;
+  if (n > temp) return n - temp;
+  else return temp - n;
 }
 
-double cubicRoot(double n) {
+double cubeRt(double n) {
   double start = 0, end = n;
 
   double e = 0.0000001;
@@ -32,5 +33,5 @@ int main() {
     nums[i] = n;
   }
 
-  for (int j = 0; j < t; j++) cout << cubicRoot(nums[j]) << '\n';
+  for (int j = 0; j < t; j++) cout << cubeRt(nums[j]) << '\n';
 }

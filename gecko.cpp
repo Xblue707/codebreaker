@@ -4,7 +4,7 @@ using namespace std;
 array<array<int, 500>, 500> sums;
 
 int tile(const int i, const int j, const int W) {
-  if (i < 0 || j < 0 || j >= W) { return 0; }
+  if (i < 0 || j < 0 || j >= W) return 0;
   return sums[i][j];
 }
 

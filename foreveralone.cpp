@@ -20,6 +20,5 @@ int main() {
       cats.insert(k);
     }
   }
-  int ans = n - cats.size();
-  cout << ans;
+  cout << n - cats.size();
 }

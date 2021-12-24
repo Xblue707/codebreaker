@@ -3,32 +3,32 @@
 using namespace std;
 
 int main() {
-  vector<string> commands;
+  vector<string> cmds;
   int s, n;
   cin >> s >> n;
 
-  int dirty = 0, totalUni = s;
+  int dirty = 0, total = s;
 
   for (int i = 0; i < n; i++) {
-    string command;
-    cin >> command;
-    commands.push_back(command);
+    string cmd;
+    cin >> cmd;
+    cmds.push_back(cmd);
   }
 
-  for (int j = 0; j < commands.size(); j++) {
-    if (commands[j] == "USE") {
+  for (int j = 0; j < cmds.size(); j++) {
+    if (cmds[j] == "USE") {
       dirty++;
       s--;
 
-      if (dirty > totalUni) {
+      if (dirty > total) {
         cout << "DIRTY";
         break;
       }
     }
-    else if (commands[j] == "WASH") {
+    else if (cmds[j] == "WASH") {
       dirty = 0;
-      s = totalUni;
+      s = total;
     }
   }
-  if (dirty <= totalUni) cout << "CLEAN";
+  if (dirty <= total) cout << "CLEAN";
 }

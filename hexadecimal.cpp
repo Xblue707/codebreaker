@@ -9,6 +9,7 @@ int main() {
   int n;
   cin >> n;
   vector<string> nums;
+
   for (int i = 0; i < n; i++) {
     string num;
     cin >> num;

@@ -13,5 +13,5 @@ int main() {
     chars.push_back(a);
   }
 
-  for (int j = 0; j < chars.size(); j++) cout << (int) chars[j] << '\n';
+  for (auto j : chars) cout << (int) j << '\n';
 }

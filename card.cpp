@@ -3,33 +3,33 @@ using namespace std;
 
 int main() {
   deque<int> d;
-  int num, find;
+  int num, fd;
   cin >> num;
 
   for (int i = 0; i < num; i++) d.push_back(i);
 
-  cin >> find;
+  cin >> fd;
 
   string steps;
   cin >> steps;
 
-  int temp1, temp2;
+  int tmp1, tmp2;
 
   for (int i = 0; i < steps.length() - 1; i++) {
     char c = steps[i];
     if (c == 65) { // A
-      temp1 = d.front();
+      tmp1 = d.front();
       d.pop_front();
-      d.push_back(temp1);
+      d.push_back(tmp1);
     }
     else {
-      temp1 = d.front();
-      temp2 = d[1];
+      tmp1 = d.front();
+      tmp2 = d[1];
       d.pop_front();
       d.pop_front();
-      d.push_front(temp1);
-      d.push_back(temp2);
+      d.push_front(tmp1);
+      d.push_back(tmp2);
     }
   }
-  cout << d[find - 1] << ' ' << d[find] << ' ' << d[find + 1];
+  cout << d[fd - 1] << ' ' << d[fd] << ' ' << d[fd + 1];
 }

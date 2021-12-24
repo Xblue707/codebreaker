@@ -3,9 +3,7 @@ using namespace std;
 
 int main() {
   int i, j, rows;
-  char b, w, temp;
-  b = 'o';
-  w = 'x';
+  char b = 'o', w = 'x', temp;
 
   cin >> rows;
   for (i = 0; i < rows; i++) {
