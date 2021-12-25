@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-  int l, mx;
-  cin >> l;
+	int l, mx;
+	cin >> l;
 
-  mx = pow(l, 2);
+	mx = pow(l, 2);
 
-  for (int i = 1; i <= mx; i++) {
-    int root = sqrt(i);
-    if (root * root == i) cout << i << ' ';
-    else continue;
-  }
+	for (int i = 1; i <= mx; i++) {
+		int root = sqrt(i);
+		if (root * root == i) cout << i << ' ';
+		else continue;
+	}
 }

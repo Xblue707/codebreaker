@@ -1,6 +1,7 @@
 # UseTab: Always
 # UseTab: ForContinuationAndIndentation
-UseTab: Never
+UseTab: ForIndentation
+# UseTab: Never # github angry with tabs
 IndentWidth: 2
 TabWidth: 2
 ColumnLimit: 80
@@ -114,3 +115,5 @@ SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
+
+# vim:ft=yaml

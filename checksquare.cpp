@@ -3,11 +3,11 @@
 using namespace std;
 
 int main() {
-  int a;
-  cin >> a;
+	int a;
+	cin >> a;
 
-  int root = sqrt(a);
+	int root = sqrt(a);
 
-  if (root * root == a) cout << "yes";
-  else cout << "no";
+	if (root * root == a) cout << "yes";
+	else cout << "no";
 }

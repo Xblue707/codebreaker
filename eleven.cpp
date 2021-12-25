@@ -4,21 +4,21 @@
 using namespace std;
 
 int main() {
-  string num;
-  cin >> num;
-  int oddDigits = 0, evenDigits = 0;
-  for (int i = 0; i < num.size(); i++) {
-    if (i % 2 == 0) {
-      int n = (int) num[i] - 48;
-      evenDigits += n;
-    }
-    else {
-      int n = (int) num[i] - 48;
-      oddDigits += n;
-    }
-  }
+	string num;
+	cin >> num;
+	int oddDigits = 0, evenDigits = 0;
+	for (int i = 0; i < num.size(); i++) {
+		if (i % 2 == 0) {
+			int n = (int) num[i] - 48;
+			evenDigits += n;
+		}
+		else {
+			int n = (int) num[i] - 48;
+			oddDigits += n;
+		}
+	}
 
-  if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0)
-    cout << "YES";
-  else cout << "NO";
+	if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0)
+		cout << "YES";
+	else cout << "NO";
 }

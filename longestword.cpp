@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-  int n, wordLength = 0;
-  cin >> n;
-  string longestWord;
-  for (int i = 0; i < n; i++) {
-    string s;
-    cin >> s;
-    if (wordLength < s.size()) {
-      wordLength = s.size();
-      longestWord = s;
-    }
-  }
-  cout << longestWord;
+	int n, wordLength = 0;
+	cin >> n;
+	string longestWord;
+	for (int i = 0; i < n; i++) {
+		string s;
+		cin >> s;
+		if (wordLength < s.size()) {
+			wordLength = s.size();
+			longestWord = s;
+		}
+	}
+	cout << longestWord;
 }
