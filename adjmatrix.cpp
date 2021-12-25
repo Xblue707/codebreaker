@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -8,19 +8,19 @@ int main() {
   // adjacency matrix
   bool adj[n][n];
 
-  for (int l = 0; l < n; l++) {
-    for (int o = 0; o < n; o++) adj[l][o] = 0;
+  for (int a = 0; a < n; a++) {
+    for (int b = 0; b < n; b++) adj[a][b] = 0;
   }
 
-  for (int i = 0; i < e; i++) {
+  for (int x = 0; x < e; x++) {
     int a, b;
     cin >> a >> b;
     adj[a - 1][b - 1] = 1;
     adj[b - 1][a - 1] = 1;
   }
 
-  for (int j = 0; j < n; j++) {
-    for (int k = 0; k < n; k++) cout << (int) adj[j][k];
+  for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) cout << (int) adj[i][j];
     cout << '\n';
   }
 

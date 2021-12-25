@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <cctype>
+#include <iostream>
 using namespace std;
 
 int main() {

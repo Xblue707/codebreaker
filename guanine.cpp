@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <deque>
+#include <iostream>
 using namespace std;
 
 deque<char> gene; // Stores the characters in gene

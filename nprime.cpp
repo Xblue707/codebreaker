@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <cstring>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 #define MAX_SIZE 1000005

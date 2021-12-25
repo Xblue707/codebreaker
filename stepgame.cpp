@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <climits>
+#include <iostream>
 using namespace std;
 
 int n, answer = INT_MAX, A[1000005], dp[1000005];

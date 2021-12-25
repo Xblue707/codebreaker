@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <iostream>
+#include <queue>
+#include <utility>
+#include <vector>
 using namespace std;
 
 #define FASTIO \
@@ -6,7 +10,8 @@ using namespace std;
   ios::sync_with_stdio(0);
 
 int main() {
-  FASTIO;
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
 
   long n;
   cin >> n;

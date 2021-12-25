@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <ctype.h>
+#include <iostream>
+#include <unordered_map>
 using namespace std;
 
 int main() {

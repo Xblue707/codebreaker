@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <algorithm>
+#include <array>
+#include <iostream>
 using namespace std;
 
 array<array<int, 500>, 500> sums;

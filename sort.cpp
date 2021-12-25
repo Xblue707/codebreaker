@@ -1,5 +1,9 @@
-#include <bits/stdc++.h>
+#include <algorithm>
 #include <cstdint>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
 using namespace std;
 
 // https://github.com/panks/BigInteger

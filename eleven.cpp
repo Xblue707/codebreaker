@@ -1,4 +1,4 @@
-#include <cstdlib>
+#include <algorithm>
 #include <iostream>
 #include <string> // stoi
 using namespace std;
