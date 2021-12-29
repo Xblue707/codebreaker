@@ -3,10 +3,10 @@ using namespace std;
 int main() {
 	int n;
 	cin >> n;
-	int potatoes[n];
+	int potatoes[n] = {0};
 	int *p = potatoes;
 
-	for (int i = 0; i < n; i++) { cin >> *(p + i); };
+	for (int i = 0; i < n; i++) cin >> *(p + i);
 
 	int sum = 0, max = 0;
 

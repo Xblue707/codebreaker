@@ -4,22 +4,22 @@
 using namespace std;
 
 int main() {
-	stack<char> pairs;
-	map<char, char> m;
-	m['('] = 'x';
-	m[')'] = '(';
+	stack<char> bracs;
+	map<char, char> pairs;
+	pairs['('] = 'x';
+	pairs[')'] = '(';
 
 	string S;
 	int n;
-	char c;
 	cin >> n >> S;
 
-	for (int x = 0; x < n; x++) {
-		if (pairs.empty()) pairs.push(S[x]);
-		else if (m[S[x]] == pairs.top()) pairs.pop();
-		else pairs.push(S[x]);
+	for (int i = 0; i < n; i++) {
+		char c = S[i];
+		if (bracs.empty()) bracs.push(c);
+		else if (pairs[c] == bracs.top()) bracs.pop();
+		else bracs.push(c);
 	}
 
-	if (!pairs.size()) cout << "Valid";
+	if (!bracs.size()) cout << "Valid";
 	else cout << "Invalid";
 }

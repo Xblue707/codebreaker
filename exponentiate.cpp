@@ -10,8 +10,9 @@ int expo(long long a, int b, int T) {
 		b >>= 1;
 	}
 
-	return int(R);
+	return (int) R;
 }
+
 int main() {
 	int n;
 	cin >> n;

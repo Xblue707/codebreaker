@@ -17,7 +17,7 @@ int main() {
 		cars[i] = temp;
 	}
 
-	while (1) {
+	while (true) {
 		if (cars[lol] == 1) break;
 		cars[lol] = -1;
 		lol++;

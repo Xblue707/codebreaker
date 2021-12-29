@@ -1,7 +1,7 @@
-# UseTab: Always
+# UseTab: Always # github doesn't like tabs
 # UseTab: ForContinuationAndIndentation
 UseTab: ForIndentation
-# UseTab: Never # github angry with tabs
+# UseTab: Never
 IndentWidth: 2
 TabWidth: 2
 ColumnLimit: 80
@@ -116,4 +116,5 @@ SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
 
+# i use vim fite me
 # vim:ft=yaml

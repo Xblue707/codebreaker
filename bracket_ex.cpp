@@ -4,14 +4,14 @@
 using namespace std;
 
 int main() {
-	stack<char> pairs;
-	map<char, char> m;
-	m['{'] = 'x';
-	m['}'] = '{';
-	m['['] = 'x';
-	m[']'] = '[';
-	m['('] = 'x';
-	m[')'] = '(';
+	stack<char> bracs;
+	map<char, char> pairs;
+	pairs['{'] = 'x';
+	pairs['}'] = '{';
+	pairs['['] = 'x';
+	pairs[']'] = '[';
+	pairs['('] = 'x';
+	pairs[')'] = '(';
 	string S;
 
 	int n;
@@ -19,11 +19,11 @@ int main() {
 
 	for (int x = 0; x < n; x++) {
 		char c = S[x];
-		if (pairs.empty()) pairs.push(c);
-		else if (m[c] == pairs.top()) pairs.pop();
-		else pairs.push(c);
+		if (bracs.empty()) bracs.push(c);
+		else if (pairs[c] == bracs.top()) bracs.pop();
+		else bracs.push(c);
 	}
 
-	if (!pairs.size()) cout << "Valid";
+	if (!bracs.size()) cout << "Valid";
 	else cout << "Invalid";
 }

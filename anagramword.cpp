@@ -31,13 +31,10 @@ int main() {
 		}
 	}
 
-	for (auto &i : m) {
-		if (i.second > 0) {
-			cout << "NO";
-			return 0;
-		}
+	if (any_of(m.begin(), m.end(), [](auto &i) { return i.second < 0; })) {
+		cout << "NO";
 	}
-
-	cout << "YES";
-	return 0;
+	else {
+		cout << "YES";
+	}
 }

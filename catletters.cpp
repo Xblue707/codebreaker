@@ -24,6 +24,5 @@ int main() {
 	stuff *= 100;
 	stuff = (int) floor(stuff);
 
-	int percentage = stuff;
-	printf("%i%%", percentage);
+	printf("%i%%", (int) stuff);
 }

@@ -7,15 +7,11 @@ int main() {
 	string num;
 	cin >> num;
 	int oddDigits = 0, evenDigits = 0;
+
 	for (int i = 0; i < num.size(); i++) {
-		if (i % 2 == 0) {
-			int n = (int) num[i] - 48;
-			evenDigits += n;
-		}
-		else {
-			int n = (int) num[i] - 48;
-			oddDigits += n;
-		}
+		int n = (int) num[i] - 48;
+		if (i % 2 == 0) evenDigits += n;
+		else oddDigits += n;
 	}
 
 	if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0)
