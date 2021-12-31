@@ -9,33 +9,38 @@ using namespace std;
 	cin.tie(0);  \
 	ios::sync_with_stdio(0);
 
+#define FR first
+#define SC second
+#define lg long
+#define pl pair<long, long>
+
 int main() {
 	ios::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	long n;
+	lg n;
 	cin >> n;
-	priority_queue<pair<long, long>, vector<pair<long, long>>, greater<pair<long, long>>> q;
+	priority_queue<pl, vector<pl>, greater<pl>> q;
 
 	while (n--) {
-		long l, c;
+		lg l, c;
 		cin >> l >> c;
 		q.emplace(l, c);
 	}
 
 	auto p = q.top();
 	q.pop();
-	long t = 0;
+	lg t = 0;
 
 	while (!q.empty()) {
 		auto c = q.top();
 		q.pop();
-		if (c.first != p.first) {
+		if (c.FR != p.FR) {
 			p = c;
 			continue;
 		}
-		t += c.second + p.second;
-		q.emplace(c.first + 1, c.second + p.second);
+		t += c.SC + p.SC;
+		q.emplace(c.FR + 1, c.SC + p.SC);
 		p = q.top();
 		q.pop();
 	}

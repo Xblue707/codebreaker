@@ -8,8 +8,7 @@ int main() {
 	cin >> n >> k >> x;
 	for (int i = 0; i < k; i++) {
 		string s = to_string(x);
-		size_t found = s.find('7');
-		if (x % 7 == 0 || found != string::npos) cout << "UP!\n";
+		if (x % 7 == 0 || s.find('7') != string::npos) cout << "UP!\n";
 		else cout << x << '\n';
 
 		x += n;

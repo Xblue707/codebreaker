@@ -17,8 +17,8 @@ int main() {
 	int n;
 	cin >> n >> S;
 
-	for (int x = 0; x < n; x++) {
-		char c = S[x];
+	for (int i = 0; i < n; i++) {
+		char c = S[i];
 		if (bracs.empty()) bracs.push(c);
 		else if (pairs[c] == bracs.top()) bracs.pop();
 		else bracs.push(c);

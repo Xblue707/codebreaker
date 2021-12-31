@@ -5,7 +5,7 @@
 
 using namespace std;
 int main() {
-	bool isHex = 0;
+	bool yes = 0;
 	int n;
 	cin >> n;
 	vector<string> nums;
@@ -19,14 +19,14 @@ int main() {
 
 	for (int j = 0; j < nums.size(); j++) {
 		for (int k = 1; k < nums[j].size(); k++) {
-			if (isxdigit(nums[j][k])) { isHex = 1; }
+			if (isxdigit(nums[j][k])) { yes = 1; }
 			else {
-				isHex = 0;
+				yes = 0;
 				break;
 			}
 		}
 
-		if (isHex) cout << "Hexadecimal\n";
+		if (yes) cout << "Hexadecimal\n";
 		else cout << "Not Hexadecimal\n";
 	}
 }

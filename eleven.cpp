@@ -6,15 +6,14 @@ using namespace std;
 int main() {
 	string num;
 	cin >> num;
-	int oddDigits = 0, evenDigits = 0;
+	int odd = 0, even = 0;
 
 	for (int i = 0; i < num.size(); i++) {
-		int n = (int) num[i] - 48;
-		if (i % 2 == 0) evenDigits += n;
-		else oddDigits += n;
+		int n = num[i] - 48;
+		if (i % 2 == 0) even += n;
+		else odd += n;
 	}
 
-	if ((max(oddDigits, evenDigits) - min(oddDigits, evenDigits)) % 11 == 0)
-		cout << "YES";
+	if ((max(odd, even) - min(odd, even)) % 11 == 0) cout << "YES";
 	else cout << "NO";
 }

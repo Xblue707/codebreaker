@@ -3,8 +3,7 @@ using namespace std;
 int main() {
 	int n;
 	cin >> n;
-	int potatoes[n] = {0};
-	int *p = potatoes;
+	int potatoes[n], *p = potatoes;
 
 	for (int i = 0; i < n; i++) cin >> *(p + i);
 

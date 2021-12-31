@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	int n, wordLength = 0;
 	cin >> n;
-	string shortestWord = "";
+	string shortestWord;
 	for (int i = 1; i <= n; i++) {
 		string s;
 		cin >> s;

@@ -15,8 +15,8 @@ int main() {
 		master += x;
 	}
 
-	for (int j = 0; j < master.size(); j++) {
-		if (master[j] == 'c' || master[j] == 'C') counter++;
+	for (auto j : master) {
+		if (j == 'c' || j == 'C') counter++;
 	}
 
 

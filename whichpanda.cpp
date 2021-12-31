@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
-#define ll long long
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	ll n, big = 0, e, cur;
+	long long n, big = 0, e, cur;
 	bool alone = 1;
 	cin >> n;
+
 	for (int i = 1; i <= n; i++) {
 		cin >> e;
 		if (e > big) {

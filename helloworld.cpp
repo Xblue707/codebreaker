@@ -1,2 +1,2 @@
-#include <stdio.h>
-int main() { printf("Hello World"); }
+#include <iostream>
+int main() { std::cout << "Hello World"; }

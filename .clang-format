@@ -93,7 +93,7 @@ PointerAlignment: Right
 ReferenceAlignment: Right
 ReflowComments: false
 SortIncludes: CaseInsensitive
-SortUsingDeclarations:  true
+SortUsingDeclarations: true
 SpaceAfterCStyleCast: true
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
@@ -115,6 +115,5 @@ SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-
 # i use vim fite me
 # vim:ft=yaml
