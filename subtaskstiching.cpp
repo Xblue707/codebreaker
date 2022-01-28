@@ -1,3 +1,4 @@
+// if you're lucky, you might get AC on the first try
 #include <experimental/random>
 #include <iostream>
 using namespace std;
