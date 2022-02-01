@@ -18,7 +18,7 @@ int main() {
 	}
 
 	for (auto j : s) {
-		size_t count = std::count(s.begin(), s.end(), j);
-		printf("%c %lu\n", j, count);
+		size_t cnt = count(s.begin(), s.end(), j);
+		printf("%c %lu\n", j, cnt);
 	}
 }
