@@ -5,6 +5,9 @@
 using namespace std;
 
 int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	int n = 0, s = 0, temp, ans = 0, lol = 0, count = 0, k = 0, c = 0;
 	priority_queue<int, vector<int>, greater<int>> gaps;
 
