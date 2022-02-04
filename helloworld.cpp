@@ -1,2 +1,4 @@
 #include <iostream>
-int main() { std::cout << "Hello World"; }
+using namespace std;
+
+int main() { cout << "Hello World"; }
