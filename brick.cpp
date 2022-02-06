@@ -14,8 +14,9 @@ int main() {
 		int b;
 		cin >> b;
 
-		if (bricks.empty() || bricks.top() > b) bricks.push(b);
-		else {
+		if (bricks.empty() || bricks.top() > b) {
+			bricks.push(b);
+		} else {
 			while (bricks.top() <= b) {
 				bricks.pop();
 				if (bricks.empty()) break;

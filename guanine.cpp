@@ -28,23 +28,19 @@ int main() {
 			char dna;
 			cin >> dna;
 			addBack(dna);
-		}
-		else if (instruction.compare("ADD_FRONT") == 0) {
+		} else if (instruction.compare("ADD_FRONT") == 0) {
 			char dna;
 			cin >> dna;
 			addFront(dna);
-		}
-		else if (instruction.compare("SNIP_BACK") == 0) {
+		} else if (instruction.compare("SNIP_BACK") == 0) {
 			int Y;
 			cin >> Y;
 			snipBack(Y);
-		}
-		else if (instruction.compare("SNIP_FRONT") == 0) {
+		} else if (instruction.compare("SNIP_FRONT") == 0) {
 			int Y;
 			cin >> Y;
 			snipFront(Y);
-		}
-		else if (instruction.compare("QUERY") == 0) {
+		} else if (instruction.compare("QUERY") == 0) {
 			int Z;
 			cin >> Z;
 			result.push_back(gene[Z]);

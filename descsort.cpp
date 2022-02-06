@@ -7,7 +7,7 @@ int main() {
 	int n;
 	cin >> n;
 	vector<int> v;
-	v.clear();
+
 	for (int i = 0; i < n; i++) {
 		int m;
 		cin >> m;

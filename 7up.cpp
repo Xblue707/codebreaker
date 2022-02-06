@@ -10,7 +10,6 @@ int main() {
 		string s = to_string(x);
 		if (x % 7 == 0 || s.find('7') != string::npos) cout << "UP!\n";
 		else cout << x << '\n';
-
 		x += n;
 	}
 }

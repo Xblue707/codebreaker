@@ -34,8 +34,7 @@ int main() {
 				gaps.push(count);
 				count = 0;
 			}
-		}
-		else if (cars[i] == 0) {
+		} else if (cars[i] == 0) {
 			k += c;
 			c = 0;
 			count++;

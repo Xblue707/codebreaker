@@ -14,10 +14,10 @@ int main() {
 	}
 
 	vector<int> v(n + k + 1, 0);
-	for (int i = k; i < n + k; ++i)  cin >> v[i]; 
+	for (int i = k; i < n + k; ++i) cin >> v[i];
 
 	multiset<int> s;
-	for (int j = 0; j < k; ++j) { s.emplace(v[j]); }
+	for (int j = 0; j < k; ++j) s.emplace(v[j]);
 
 	for (int l = k; l < n + k + 1; ++l) {
 		v[l] = max(v[l], *(s.begin()));
