@@ -14,8 +14,7 @@ int main() {
 	for (int c = 0; c < a; c++) {
 		if (!v.empty()) {
 			if (v[v.size() - 1] != arr[c]) v.push_back(arr[c]);
-		}
-		else v.push_back(arr[c]);
+		} else v.push_back(arr[c]);
 	}
 	cout << v.size();
 }

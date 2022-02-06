@@ -6,6 +6,7 @@ float __int_as_float(int32_t a) {
 	memcpy(&r, &a, sizeof r);
 	return r;
 }
+
 int32_t __float_as_int(float a) {
 	int32_t r;
 	memcpy(&r, &a, sizeof r);

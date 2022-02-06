@@ -22,8 +22,7 @@ int main() {
 			tmp1 = d.front();
 			d.pop_front();
 			d.push_back(tmp1);
-		}
-		else {
+		} else {
 			tmp1 = d.front();
 			tmp2 = d[1];
 			d.pop_front();

@@ -16,8 +16,7 @@ int main() {
 		if (pigeons > n) {
 			fenceBreak = true;
 			ultimate = true;
-		}
-		else fenceBreak = false;
+		} else fenceBreak = false;
 	}
 	if (ultimate) cout << "PLAN REJECTED";
 	else if (!fenceBreak) cout << "PLAN ACCEPTED";

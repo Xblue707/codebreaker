@@ -10,7 +10,7 @@ int main() {
 	cin >> n >> v;
 
 	vector<int> c(n);
-	for (int i = 0; i < n; ++i) cin >> c[i]; 
+	for (int i = 0; i < n; ++i) cin >> c[i];
 
 	vector<int> monies(v + 1);
 	monies[0] = 0;

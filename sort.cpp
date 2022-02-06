@@ -70,8 +70,7 @@ BigInteger::BigInteger(string s) { // "string" constructor
 	if (isdigit(s[0])) { // if not signed
 		setNumber(s);
 		sign = false; // +ve
-	}
-	else {
+	} else {
 		setNumber(s.substr(1));
 		sign = (s[0] == '-');
 	}
@@ -92,8 +91,7 @@ BigInteger::BigInteger(int n) { // "int" constructor
 	if (isdigit(s[0])) { // if not signed
 		setNumber(s);
 		setSign(false); // +ve
-	}
-	else {
+	} else {
 		setNumber(s.substr(1));
 		setSign(s[0] == '-');
 	}
@@ -165,13 +163,11 @@ BigInteger BigInteger::operator+(BigInteger b) {
 	if (getSign() == b.getSign()) { // both +ve or -ve
 		addition.setNumber(add(getNumber(), b.getNumber()));
 		addition.setSign(getSign());
-	}
-	else { // sign different
+	} else { // sign different
 		if (absolute() > b.absolute()) {
 			addition.setNumber(subtract(getNumber(), b.getNumber()));
 			addition.setSign(getSign());
-		}
-		else {
+		} else {
 			addition.setNumber(subtract(b.getNumber(), getNumber()));
 			addition.setSign(b.getSign());
 		}
@@ -284,8 +280,7 @@ bool BigInteger::less(BigInteger n1, BigInteger n2) {
 		if (n1.getNumber().length() < n2.getNumber().length()) return true;
 		if (n1.getNumber().length() > n2.getNumber().length()) return false;
 		return n1.getNumber() < n2.getNumber();
-	}
-	else { // both -ve
+	} else { // both -ve
 		if (n1.getNumber().length() > n2.getNumber().length()) return true;
 		if (n1.getNumber().length() < n2.getNumber().length()) return false;
 		return n1.getNumber().compare(n2.getNumber()) > 0; // greater with -ve sign is LESS
@@ -314,8 +309,7 @@ string BigInteger::add(string number1, string number2) {
 			if (add[i] > '9') {
 				add[i] -= 10;
 				carry = '1';
-			}
-			else carry = '0';
+			} else carry = '0';
 		}
 	}
 	if (add[0] > '9') {
@@ -363,8 +357,7 @@ string BigInteger::multiply(string n1, string n2) {
 			if (temp[j] > 9) {
 				carry = (temp[j] / 10);
 				temp[j] -= (carry * 10);
-			}
-			else carry = 0;
+			} else carry = 0;
 
 			temp[j] += '0'; // back to string mood
 		}

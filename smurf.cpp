@@ -15,8 +15,7 @@ int main() {
 		if (check) {
 			smurfs.push_front(k);
 			check = 0;
-		}
-		else {
+		} else {
 			smurfs.push_back(k);
 			check = 1;
 		}

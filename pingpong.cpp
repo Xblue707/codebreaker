@@ -10,8 +10,7 @@ string winner(string S) {
 		if (p - r >= 2 && p >= 11) {
 			pw++;
 			r = p = 0;
-		}
-		else if (r - p >= 2 && r >= 11) {
+		} else if (r - p >= 2 && r >= 11) {
 			rw++;
 			r = p = 0;
 		}

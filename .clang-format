@@ -42,11 +42,11 @@ BraceWrapping:
   AfterStruct: false
   AfterUnion: false
   AfterExternBlock: false
-  # BeforeCatch: false
-  BeforeCatch: true
+  BeforeCatch: false
+  # BeforeCatch: true
   BeforeLambdaBody: false
-  # BeforeElse: false
-  BeforeElse: true
+  BeforeElse: false
+  # BeforeElse: true
   BeforeWhile: false
   IndentBraces: false
   SplitEmptyFunction: false

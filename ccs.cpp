@@ -15,14 +15,10 @@ int main() {
 		if (events.compare("WAKE") == 0) {
 			cin >> x;
 			cats.erase(x);
-		}
-
-		else if (events.compare("SLEEP") == 0) {
+		} else if (events.compare("SLEEP") == 0) {
 			cin >> x;
 			cats.insert(x);
-		}
-
-		else if (events.compare("TRANSMIT") == 0) {
+		} else if (events.compare("TRANSMIT") == 0) {
 			cin >> x >> y;
 
 			if (*cats.lower_bound(x) > y || cats.lower_bound(x) == cats.end())
