@@ -1,20 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-float __int_as_float(int32_t a) {
+float intToFloat(int32_t a) {
 	float r;
 	memcpy(&r, &a, sizeof r);
 	return r;
 }
 
-int32_t __float_as_int(float a) {
+int32_t floatToInt(float a) {
 	int32_t r;
 	memcpy(&r, &a, sizeof r);
 	return r;
 }
 
 /* compute natural logarithm, maximum error 0.85089 ulps */
-float log_e(float X) {
+float logE(float X) {
 	float i, m, r, s, t;
 	int e;
 
@@ -31,8 +31,8 @@ float log_e(float X) {
 		X = X * 8388608.0f; // 0x1.0p+23
 		i = -23.0f;
 	}
-	e = (__float_as_int(X) - __float_as_int(0.666666667f)) & 0xff800000;
-	m = __int_as_float(__float_as_int(X) - e);
+	e = (floatToInt(X) - floatToInt(0.666666667f)) & 0xff800000;
+	m = intToFloat(floatToInt(X) - e);
 	i = fmaf((float) e, 1.19209290e-7f, i); // 0x1.0p-23
 #endif // PORTABLE
 	/* m in [2/3, 4/3] */
