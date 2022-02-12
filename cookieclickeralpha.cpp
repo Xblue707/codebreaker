@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-#include <cstdio>
 using namespace std;
-
 
 long double test() {
 	long double c, f, x;
