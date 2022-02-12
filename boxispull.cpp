@@ -4,6 +4,7 @@ using namespace std;
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
+	cout.tie(nullptr);
 
 	long long tc, x1, x2, y1, y2;
 	cin >> tc;
