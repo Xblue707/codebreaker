@@ -1,16 +1,27 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int mod, n;
-	long long fibo[2000];
-	fibo[0] = 0;
-	fibo[1] = 1;
-	cin >> n >> mod;
+	cin.tie(nullptr);
+	cout.tie(nullptr);
+	ios_base::sync_with_stdio(false);
+
+	int n;
+	cin >> n;
+
+	long mod = 998244353;
+	long long fib[n];
+
+	fib[0] = 0;
+	fib[1] = 1;
+
+	cout << fib[0] << '\n' << fib[1] << '\n';
+
 	if (n >= 2) {
-		for (int i = 2; i <= n; i++) {
-			fibo[i] = (fibo[i - 1] + fibo[i - 2]) % mod;
+		for (int i = 2; i <= n; ++i) {
+			fib[i] = (fib[i - 1] + fib[i - 2]) % mod;
+			cout << fib[i] << '\n';
 		}
 	}
-	cout << fibo[n];
 }
+
