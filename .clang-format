@@ -1,7 +1,4 @@
-# UseTab: Always # github doesn't like tabs
-# UseTab: ForContinuationAndIndentation
 UseTab: ForIndentation
-# UseTab: Never
 IndentWidth: 2
 TabWidth: 2
 ColumnLimit: 80
@@ -80,7 +77,7 @@ IndentWrappedFunctionNames: true
 InsertTrailingCommas: None
 KeepEmptyLinesAtTheStartOfBlocks: false
 LambdaBodyIndentation: OuterScope
-MaxEmptyLinesToKeep: 2
+MaxEmptyLinesToKeep: 1
 NamespaceIndentation: All
 PenaltyBreakAssignment: 1
 PenaltyBreakBeforeFirstCallParameter: 1
@@ -115,5 +112,4 @@ SpacesInConditionalStatement: false
 SpacesInContainerLiterals: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-# i use vim fite me
 # vim:ft=yaml
