@@ -5,7 +5,7 @@ made by a few Year 1 and 2 students from HCI EC3.
 
 ## Format
 
-Install `clang-format` and remember to format your code before pushing it.
+Install `clang-format` and remember to format your code before pushing it. Make sure you do it. Or else.
 
 ## Contributors
 
