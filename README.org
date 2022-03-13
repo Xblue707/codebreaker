@@ -1,9 +1,9 @@
-* codebreaker
+* Codebreaker Solutions
   :PROPERTIES:
   :CUSTOM_ID: codebreaker
   :END:
 A giant repository of solutions for the competitive programming website,
-[[https://codebreaker.xyz/][CodeBreaker]], made by a few Year 1 and 2
+[[https://codebreaker.xyz/][Codebreaker]], made by a few Year 1 and 2
 students from HCI EC3.
 
 ** Format
