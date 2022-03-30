@@ -3,15 +3,8 @@
   :CUSTOM_ID: codebreaker
   :END:
 A giant repository of solutions for the competitive programming website,
-[[https://codebreaker.xyz/][Codebreaker]], made by a few Year 1 and 2
+[[https://codebreaker.xyz/][Codebreaker]], made by me and a few
 students from HCI EC3.
-
-** Format
-   :PROPERTIES:
-   :CUSTOM_ID: format
-   :END:
-Install =clang-format= and remember to format your code before pushing
-it. Make sure you do it. Or else.
 
 ** Contributors
    :PROPERTIES:
