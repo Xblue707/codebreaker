@@ -1,9 +1,4 @@
-#include <algorithm>
-#include <cstdint>
-#include <iostream>
-#include <sstream>
-#include <string>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 // https://github.com/panks/BigInteger
@@ -86,7 +81,6 @@ BigInteger::BigInteger(int n) { // "int" constructor
 	string s;
 	ss << n;
 	ss >> s;
-
 
 	if (isdigit(s[0])) { // if not signed
 		setNumber(s);
