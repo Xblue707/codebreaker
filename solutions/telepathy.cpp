@@ -18,10 +18,12 @@
 * Submitter (S) | ATTAINED: 22    | ENTERED: UNKNOWN
 * Me (M)        | ATTAINED: 60.88 | ENTERED: 38.88
 * Me (M)        | ATTAINED: 100   | ENTERED: 39.12
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	double x = 0.00;
+	double x = 0.00; // use the value you desire!
 	cout << x;
 }
