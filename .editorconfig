@@ -1,5 +1,6 @@
 root = true
 
+# this file is solely to make github display tab sizes as 2 and not 8
 [*]
 end_of_line = lf
 insert_final_newline = true
