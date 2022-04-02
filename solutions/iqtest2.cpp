@@ -1,4 +1,6 @@
-/* EDITORIAL: iqtest2
+/*
+	* EDITORIAL: iqtest2
+
 	* This problem actually doesn't rely on the concept of modular arithmetic.
 	* The simplest way to figure out a pattern is to brute-force values from
 	* 0 to 20.
@@ -29,7 +31,7 @@
 	* This now means that if k, the exponent, is divisible by p - 1,
 	* you should output, simply, p - 1.
 	* If not, as shown by the brute-force method, you should output 0.
-	*/
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -46,8 +48,8 @@ ll pw(ll a, ll b, ll mo) {
 }
 
 int main() {
-	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
+	ios_base::sync_with_stdio(false);
 
 	// ll t, p, k;
 	// cin >> t;
