@@ -1,14 +1,9 @@
+#+NAME: codebreaker
+#+AUTHOR: g-e-o-m-e-t-r-i-c
+
 * Codebreaker Solutions
-  :PROPERTIES:
-  :CUSTOM_ID: codebreaker
-  :END:
 A giant repository of solutions for the competitive programming website,
-[[https://codebreaker.xyz/][Codebreaker]], made by me and a few
-students from HCI EC3.
+[[https://codebreaker.xyz/][Codebreaker]], made by me and a few students from HCI EC3.
 
 ** Contributors
-   :PROPERTIES:
-   :CUSTOM_ID: contributors
-   :END:
-
 - [[https://github.com/g-e-o-m-e-t-r-i-c/][g-e-o-m-e-t-r-i-c]]
