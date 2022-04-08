@@ -1,28 +1,10 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-double diff(double n, double mid) {
-	double temp = mid * mid * mid;
-	if (n > temp) return n - temp;
-	else return temp - n;
-}
-
-double cubeRt(double n) {
-	double start = 0, end = n;
-
-	double e = 0.0000001;
-
-	while (true) {
-		double mid = (start + end) / 2;
-		double error = diff(n, mid);
-
-		if (error <= e) return mid;
-		if ((mid * mid * mid) > n) end = mid;
-		else start = mid;
-	}
-}
-
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	double nums[100000];
 	long long t;
 	cin >> t;
@@ -33,5 +15,5 @@ int main() {
 		nums[i] = n;
 	}
 
-	for (int j = 0; j < t; j++) cout << cubeRt(nums[j]) << '\n';
+	for (int j = 0; j < t; j++) cout << cbrt(nums[j]) << '\n';
 }
