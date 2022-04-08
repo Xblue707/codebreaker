@@ -1,51 +1,50 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-deque<char> gene; // Stores the characters in gene
+deque<char> seq; // Stores the characters in seq
 
-void addBack(char x) { gene.push_back(x); }
+void addBack(char a) { seq.push_back(a); }
 
-void addFront(char x) { gene.push_front(x); }
+void addFront(char b) { seq.push_front(b); }
 
-void snipBack(int y) { gene.erase(gene.begin() + y + 1, gene.end()); }
+void snipBack(int c) { seq.erase(seq.begin() + c + 1, seq.end()); }
 
-void snipFront(int y) { gene.erase(gene.begin(), gene.begin() + y + 1); }
+void snipFront(int d) { seq.erase(seq.begin(), seq.begin() + d + 1); }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	int n = 0;
+	int n;
 	string instruction;
-	deque<char> result;
+	deque<char> queries;
 
 	cin >> n;
 
 	for (int i = 0; i < n; i++) {
 		cin >> instruction;
 		if (instruction.compare("ADD_BACK") == 0) {
-			char dna;
-			cin >> dna;
-			addBack(dna);
+			char nucleo1;
+			cin >> nucleo1;
+			addBack(nucleo1);
 		} else if (instruction.compare("ADD_FRONT") == 0) {
-			char dna;
-			cin >> dna;
-			addFront(dna);
+			char nucleo2;
+			cin >> nucleo2;
+			addFront(nucleo2);
 		} else if (instruction.compare("SNIP_BACK") == 0) {
-			int Y;
-			cin >> Y;
-			snipBack(Y);
+			int x;
+			cin >> x;
+			snipBack(x);
 		} else if (instruction.compare("SNIP_FRONT") == 0) {
-			int Y;
-			cin >> Y;
-			snipFront(Y);
+			int y;
+			cin >> y;
+			snipFront(y);
 		} else if (instruction.compare("QUERY") == 0) {
 			int Z;
 			cin >> Z;
-			result.push_back(gene[Z]);
+			queries.push_back(seq[Z]);
 		}
 	}
 
-	for (deque<char>::iterator it = result.begin(); it != result.end(); ++it)
-		cout << *it << "\n";
+	for (auto j : queries) cout << j << '\n';
 }

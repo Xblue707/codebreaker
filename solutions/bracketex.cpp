@@ -1,9 +1,19 @@
-#include <iostream>
-#include <map>
-#include <stack>
+#include <bits/stdc++.h>
 using namespace std;
 
+#define lg long
+#define ll long long
+#define ull unsigned long long
+
+#define loop(var, start, end) for (auto var = start; var < end; ++var)
+#define dloop(var, start, end) for (auto var = start; var > end; --var)
+#define iloop(var, st) for (auto var : st)
+
 int main() {
+	cin.tie(nullptr);
+	cout.tie(nullptr);
+	ios_base::sync_with_stdio(false);
+
 	stack<char> bracs;
 	map<char, char> pairs;
 	pairs['{'] = 'x';
