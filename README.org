@@ -5,5 +5,10 @@
 A giant repository of solutions for the competitive programming website,
 [[https://codebreaker.xyz/][Codebreaker]], collected by me and a few students from HCI EC3.
 
+** Makefile Things
+There is a =Makefile= in the =./solutions= directory.
+
+Run =make <filename without extension>= to compile the file!
+
 ** Contributors
 + [[https://github.com/g-e-o-m-e-t-r-i-c/][g-e-o-m-e-t-r-i-c]]

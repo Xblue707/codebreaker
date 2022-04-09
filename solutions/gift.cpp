@@ -1,12 +1,47 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+using l = long;
+using ll = long long;
+using ull = unsigned long long;
+using db = double;
+using ld = long double;
+
+#define pi pair<int, int>
+#define pl pair<long, long>
+#define pll pair<long long, long long>
+#define vi vector<int>
+#define vii vector<pair<int, int>>
+#define vl vector<long long>
+#define vll vector<pair<long long, long long>>
+
+#define loop(var, start, end) for (auto var = (start); var < (end); ++var)
+#define dloop(var, start, end) for (auto var = (start); var > (end); --var)
+#define iloop(var, st) for (auto var : st)
+
+#define eb emplace_back
+#define fi first
+#define mp make_pair
+#define pb push_back
+#define ppb pop_back
+#define pf push_front
+#define ppf pop_front
+#define sc second
+
+#define prn printf
+#define scn scanf
+
 int main() {
+	cin.tie(nullptr);
+	cout.tie(nullptr);
+	ios_base::sync_with_stdio(false);
+
 	int n, k, gifts = 0, timings[100];
 	cin >> n >> k >> timings[0];
 	for (int i = 1; i < n; i++) {
 		cin >> timings[i];
 		if (timings[i - 1] - timings[i] >= k) gifts++;
 	}
+
 	cout << gifts;
 }
