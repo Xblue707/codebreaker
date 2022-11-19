@@ -14,8 +14,10 @@ int main() {
 	for (int x : nums) {
 		auto it = lower_bound(lis.begin(), lis.end(), x);
 		const int idx = it - lis.begin();
-		if (it == lis.end()) lis.push_back(x);
-		else *it = x;
+		if (it == lis.end())
+			lis.push_back(x);
+		else
+			*it = x;
 
 		if (idx == maxsum) maxsum++;
 	}

@@ -4,54 +4,54 @@ using namespace std;
 // https://github.com/panks/BigInteger
 #define MAX 10000
 class BigInteger {
-	private:
-		string number;
-		bool sign;
+ private:
+	string number;
+	bool sign;
 
-	public:
-		BigInteger(); // empty constructor initializes zero
-		BigInteger(string s); // "string" constructor
-		BigInteger(string s, bool sin); // "string" constructor
-		BigInteger(int n); // "int" constructor
-		void setNumber(string s);
-		const string& getNumber(); // retrieves the number
-		void setSign(bool s);
-		const bool& getSign();
-		BigInteger absolute(); // returns the absolute value
-		void operator=(BigInteger b);
-		bool operator==(BigInteger b);
-		bool operator!=(BigInteger b);
-		bool operator>(BigInteger b);
-		bool operator<(BigInteger b);
-		bool operator>=(BigInteger b);
-		bool operator<=(BigInteger b);
-		BigInteger& operator++(); // prefix
-		BigInteger operator++(int); // postfix
-		BigInteger& operator--(); // prefix
-		BigInteger operator--(int); // postfix
-		BigInteger operator+(BigInteger b);
-		BigInteger operator-(BigInteger b);
-		BigInteger operator*(BigInteger b);
-		BigInteger operator/(BigInteger b);
-		BigInteger operator%(BigInteger b);
-		BigInteger& operator+=(BigInteger b);
-		BigInteger& operator-=(BigInteger b);
-		BigInteger& operator*=(BigInteger b);
-		BigInteger& operator/=(BigInteger b);
-		BigInteger& operator%=(BigInteger b);
-		BigInteger& operator[](int n);
-		BigInteger operator-(); // unary minus sign
-		operator string(); // for conversion from BigInteger to string
-	private:
-		bool equals(BigInteger n1, BigInteger n2);
-		bool less(BigInteger n1, BigInteger n2);
-		bool greater(BigInteger n1, BigInteger n2);
-		string add(string number1, string number2);
-		string subtract(string number1, string number2);
-		string multiply(string n1, string n2);
-		pair<string, long long> divide(string n, long long den);
-		string toString(long long n);
-		long long toInt(string s);
+ public:
+	BigInteger();                   // empty constructor initializes zero
+	BigInteger(string s);           // "string" constructor
+	BigInteger(string s, bool sin); // "string" constructor
+	BigInteger(int n);              // "int" constructor
+	void setNumber(string s);
+	const string& getNumber(); // retrieves the number
+	void setSign(bool s);
+	const bool& getSign();
+	BigInteger absolute(); // returns the absolute value
+	void operator=(BigInteger b);
+	bool operator==(BigInteger b);
+	bool operator!=(BigInteger b);
+	bool operator>(BigInteger b);
+	bool operator<(BigInteger b);
+	bool operator>=(BigInteger b);
+	bool operator<=(BigInteger b);
+	BigInteger& operator++();   // prefix
+	BigInteger operator++(int); // postfix
+	BigInteger& operator--();   // prefix
+	BigInteger operator--(int); // postfix
+	BigInteger operator+(BigInteger b);
+	BigInteger operator-(BigInteger b);
+	BigInteger operator*(BigInteger b);
+	BigInteger operator/(BigInteger b);
+	BigInteger operator%(BigInteger b);
+	BigInteger& operator+=(BigInteger b);
+	BigInteger& operator-=(BigInteger b);
+	BigInteger& operator*=(BigInteger b);
+	BigInteger& operator/=(BigInteger b);
+	BigInteger& operator%=(BigInteger b);
+	BigInteger& operator[](int n);
+	BigInteger operator-(); // unary minus sign
+	operator string();      // for conversion from BigInteger to string
+ private:
+	bool equals(BigInteger n1, BigInteger n2);
+	bool less(BigInteger n1, BigInteger n2);
+	bool greater(BigInteger n1, BigInteger n2);
+	string add(string number1, string number2);
+	string subtract(string number1, string number2);
+	string multiply(string n1, string n2);
+	pair<string, long long> divide(string n, long long den);
+	string toString(long long n);
+	long long toInt(string s);
 };
 
 //------------------------------------------------------------------------------
@@ -62,7 +62,7 @@ BigInteger::BigInteger() { // empty constructor initializes zero
 }
 
 BigInteger::BigInteger(string s) { // "string" constructor
-	if (isdigit(s[0])) { // if not signed
+	if (isdigit(s[0])) {             // if not signed
 		setNumber(s);
 		sign = false; // +ve
 	} else {
@@ -268,7 +268,8 @@ bool BigInteger::less(BigInteger n1, BigInteger n2) {
 	if (sign1 && !sign2) // if n1 is -ve and n2 is +ve
 		return true;
 
-	else if (!sign1 && sign2) return false;
+	else if (!sign1 && sign2)
+		return false;
 
 	else if (!sign1) { // both +ve
 		if (n1.getNumber().length() < n2.getNumber().length()) return true;
@@ -277,7 +278,8 @@ bool BigInteger::less(BigInteger n1, BigInteger n2) {
 	} else { // both -ve
 		if (n1.getNumber().length() > n2.getNumber().length()) return true;
 		if (n1.getNumber().length() < n2.getNumber().length()) return false;
-		return n1.getNumber().compare(n2.getNumber()) > 0; // greater with -ve sign is LESS
+		return n1.getNumber().compare(n2.getNumber()) >
+					 0; // greater with -ve sign is LESS
 	}
 }
 
@@ -288,7 +290,7 @@ bool BigInteger::greater(BigInteger n1, BigInteger n2) {
 string BigInteger::add(string number1, string number2) {
 	string add = (number1.length() > number2.length()) ? number1 : number2;
 	char carry = '0';
-	int differenceInLength = abs((int) (number1.size() - number2.size()));
+	int differenceInLength = abs((int)(number1.size() - number2.size()));
 
 	if (number1.size() > number2.size())
 		number2.insert(0, differenceInLength, '0'); // put zeros from left
@@ -303,7 +305,8 @@ string BigInteger::add(string number1, string number2) {
 			if (add[i] > '9') {
 				add[i] -= 10;
 				carry = '1';
-			} else carry = '0';
+			} else
+				carry = '0';
 		}
 	}
 	if (add[0] > '9') {
@@ -315,12 +318,13 @@ string BigInteger::add(string number1, string number2) {
 
 string BigInteger::subtract(string number1, string number2) {
 	string sub = (number1.length() > number2.length()) ? number1 : number2;
-	int differenceInLength = abs((int) (number1.size() - number2.size()));
+	int differenceInLength = abs((int)(number1.size() - number2.size()));
 
 	if (number1.size() > number2.size())
 		number2.insert(0, differenceInLength, '0');
 
-	else number1.insert(0, differenceInLength, '0');
+	else
+		number1.insert(0, differenceInLength, '0');
 
 	for (int i = number1.length() - 1; i >= 0; --i) {
 		if (number1[i] < number2[i]) {
@@ -351,14 +355,16 @@ string BigInteger::multiply(string n1, string n2) {
 			if (temp[j] > 9) {
 				carry = (temp[j] / 10);
 				temp[j] -= (carry * 10);
-			} else carry = 0;
+			} else
+				carry = 0;
 
 			temp[j] += '0'; // back to string mood
 		}
 
 		if (carry > 0) temp.insert(0, 1, (carry + '0'));
 
-		temp.append((n1.length() - i - 1), '0'); // as like mult by 10, 100, 1000, 10000 and so on
+		temp.append((n1.length() - i - 1),
+								'0'); // as like mult by 10, 100, 1000, 10000 and so on
 
 		res = add(res, temp); // O(n)
 	}

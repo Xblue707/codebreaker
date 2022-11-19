@@ -43,14 +43,14 @@ int main() {
 	// bool toggle = 1;  // 0 - pop from left (min), 1 - pop from right (max)
 
 	rep(i, 0, n) {
-		cin >> op >> num;  // query
-		if (op == 1) {     // add
+		cin >> op >> num; // query
+		if (op == 1) {    // add
 			p.push(num);
 			q.push(num);
 			m.insert(num);
 		} else {
-			if (p.top() != num) isp = 0;    // can
-			if (q.front() != num) isq = 0;  // can
+			if (p.top() != num) isp = 0;   // can
+			if (q.front() != num) isq = 0; // can
 
 			if ((num != *m.begin() && !toggle) || (num != *(--m.end()) && toggle))
 				ism = 0;
@@ -59,7 +59,7 @@ int main() {
 			p.pop();
 			q.pop();
 			// popping function works
-			if (toggle)  // toggle 1 means remove the max
+			if (toggle) // toggle 1 means remove the max
 				m.erase(m.begin());
 			else
 				m.erase(--m.end());
@@ -79,7 +79,7 @@ int main() {
 	if (isq) trues++;
 	if (ism) trues++;
 
-	if (trues > 1) {  // more than one ds fulfils the above
+	if (trues > 1) { // more than one ds fulfils the above
 		cout << "unsure\n";
 	} else if (trues == 1) {
 		if (isp) cout << "priority queue\n";

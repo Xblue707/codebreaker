@@ -22,7 +22,9 @@ void prime(ull N) {
 }
 
 int main() {
-	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
 
 	// driver
 	cin >> N;
@@ -32,8 +34,10 @@ int main() {
 	map<ull, ull> m;
 	for (auto i : f) {
 		auto it = m.find(i);
-		if (it != m.end()) it->second++;
-		else m.insert(pair<ull, ull>(i, 1));
+		if (it != m.end())
+			it->second++;
+		else
+			m.insert(pair<ull, ull>(i, 1));
 	}
 
 	for (auto j = m.begin(); j != m.end(); j++)

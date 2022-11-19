@@ -2,17 +2,20 @@
 using namespace std;
 
 struct node {
-  int S, E, val;
-  node *left, *right;
-  node(int _s, int _e): S(_s), E(_e) {
-	  if (S == E) return;
-	  int M = (S + E) / 2;
-	  left = new node(S, M);
-	  right = new node(M + 1, E);
+	int S, E, val;
+	node *left, *right;
+	node(int _s, int _e) : S(_s), E(_e) {
+		if (S == E) return;
+		int M = (S + E) / 2;
+		left = new node(S, M);
+		right = new node(M + 1, E);
 	}
 
 	void update(int p, int v) {
-		if (S == E) { val = v; return; }
+		if (S == E) {
+			val = v;
+			return;
+		}
 		int M = (S + E) / 2;
 		if (p <= M)
 			left->update(p, v);
@@ -32,18 +35,18 @@ struct node {
 
 int main() {
 	ios_base::sync_with_stdio(false);
-	cin.tie(0); cout.tie(0);
-		int n, q, a,b,c;
+	cin.tie(0);
+	cout.tie(0);
+	int n, q, a, b, c;
 	cin >> n >> q;
-	auto tree = new node(0,n-1);
+	auto tree = new node(0, n - 1);
 
 	for (int i = 0; i < q; ++i) {
 		cin >> a >> b >> c;
 		if (a == 1) {
 			tree->update(b, c);
 		} else if (a == 2) {
-			cout << tree->query(b,c) << '\n';
+			cout << tree->query(b, c) << '\n';
 		}
-		}
-	
+	}
 }

@@ -22,9 +22,9 @@ int main() {
 
 	for (int i = 1; i < h; i++) {
 		for (int j = 0; j < w; j++) {
-			sums[i][j]
-			  = max(max(tile(i - 1, j - 1, w), tile(i - 1, j, w)), tile(i - 1, j + 1, w))
-			  + tiles[i][j];
+			sums[i][j] = max(max(tile(i - 1, j - 1, w), tile(i - 1, j, w)),
+											 tile(i - 1, j + 1, w)) +
+									 tiles[i][j];
 		}
 	}
 

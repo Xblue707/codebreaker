@@ -1,9 +1,9 @@
 // summarizing2021
+#include "summarizing2021.h"
+
 #include <bits/stdc++.h>
 #include <fcntl.h>
 #include <unistd.h>
-
-#include "summarizing2021.h"
 using namespace std;
 #define BUFSZ 32
 static bool rigged = false;

@@ -34,14 +34,17 @@ typedef vector<pi> vpi;
 unordered_set<string> ans;
 
 int main() {
-	setup
-	int n; cin >> n;	
+	setup int n;
+	cin >> n;
 	cin.ignore();
-	rep(i, 0,n ) {
-		string k; getline(cin,k);
+	rep(i, 0, n) {
+		string k;
+		getline(cin, k);
 		int s = sz(ans);
 		ans.insert(k);
-		if(sz(ans) ==s) cout << "NO" << nl;
-		else cout << "YES" << nl;
+		if (sz(ans) == s)
+			cout << "NO" << nl;
+		else
+			cout << "YES" << nl;
 	}
 }

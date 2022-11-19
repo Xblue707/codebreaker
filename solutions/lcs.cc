@@ -10,8 +10,10 @@ int lcs(const int i, const int j) {
 
 	if (memo[i][j] >= 0) return memo[i][j];
 
-	if (in[0].at(i) == in[1].at(j)) memo[i][j] = 1 + lcs(i - 1, j - 1);
-	else memo[i][j] = max(lcs(i, j - 1), lcs(i - 1, j));
+	if (in[0].at(i) == in[1].at(j))
+		memo[i][j] = 1 + lcs(i - 1, j - 1);
+	else
+		memo[i][j] = max(lcs(i, j - 1), lcs(i - 1, j));
 
 	return memo[i][j];
 }

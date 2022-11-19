@@ -8,8 +8,12 @@ int main() {
 	cin >> N;
 
 	vector<long> A(N), B(N);
-	for (auto i = 0; i < N; i++) { cin >> A.at(i); }
-	for (auto i = 0; i < N; i++) { cin >> B.at(i); }
+	for (auto i = 0; i < N; i++) {
+		cin >> A.at(i);
+	}
+	for (auto i = 0; i < N; i++) {
+		cin >> B.at(i);
+	}
 
 	long X;
 	cin >> X;

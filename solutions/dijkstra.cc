@@ -29,7 +29,7 @@ int main() {
 		adj[v].push_back(pi(u, wi));
 	}
 
-	priority_queue<pi> q;  // (dist, node)
+	priority_queue<pi> q; // (dist, node)
 	q.push(pi(-0, 0));
 	while (!q.empty()) {
 		pi cur = q.top();

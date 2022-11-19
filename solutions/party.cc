@@ -11,16 +11,17 @@ int main() {
 	for (int j = 0; j < e; ++j) {
 		int k, l;
 		cin >> k >> l;
-		v[k-1].push_back(l);
-		v[l-1].push_back(k);
+		v[k - 1].push_back(l);
+		v[l - 1].push_back(k);
 	}
 
-	if (v[0].empty()) { cout << 0; }
-	else {
+	if (v[0].empty()) {
+		cout << 0;
+	} else {
 		set<int> attenders;
 		for (auto i : v[0]) {
 			attenders.insert(i);
-			for (auto j : v[i-1]) attenders.insert(j);
+			for (auto j : v[i - 1]) attenders.insert(j);
 		}
 		cout << attenders.size() - 1;
 	}

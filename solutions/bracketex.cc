@@ -29,11 +29,16 @@ int main() {
 
 	for (int i = 0; i < n; i++) {
 		char c = S[i];
-		if (bracs.empty()) bracs.push(c);
-		else if (pairs[c] == bracs.top()) bracs.pop();
-		else bracs.push(c);
+		if (bracs.empty())
+			bracs.push(c);
+		else if (pairs[c] == bracs.top())
+			bracs.pop();
+		else
+			bracs.push(c);
 	}
 
-	if (!bracs.size()) cout << "Valid";
-	else cout << "Invalid";
+	if (!bracs.size())
+		cout << "Valid";
+	else
+		cout << "Invalid";
 }

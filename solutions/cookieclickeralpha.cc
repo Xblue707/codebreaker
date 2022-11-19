@@ -17,7 +17,9 @@ int main() {
 	cin >> t;
 	long double ans[t];
 
-	for (int i = 1; i <= t; i++) { ans[i - 1] = test(); }
+	for (int i = 1; i <= t; i++) {
+		ans[i - 1] = test();
+	}
 
 	for (int j = 0; j < t; j++) {
 		// cout << "Case #" << j + 1 << ": " << ans[j] << '\n';

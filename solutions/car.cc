@@ -8,9 +8,7 @@ struct edge {
 };
 
 vector<edge> edgeList;
-bool cmp(edge x, edge y) {
-	return x.w < y.w;
-} 
+bool cmp(edge x, edge y) { return x.w < y.w; }
 
 int p[1000007];
 int par(int x) { return (x == p[x]) ? x : p[x] = par(p[x]); }

@@ -4,7 +4,7 @@ using namespace std;
 #define vi vector<int>
 
 class Graph {
-	public:
+ public:
 	int verts;
 	vector<vi> adjList;
 
@@ -26,7 +26,7 @@ class Graph {
 	void dfs(bool visited[], int start) {
 		if (start < 0 || start >= this->verts) return;
 		visited[start] = true;
-		
+
 		int i = 0;
 		while (i < this->adjList.at(start).size()) {
 			if (!(visited[this->adjList.at(start).at(i)])) {
@@ -53,13 +53,13 @@ class Graph {
 };
 
 int main() {
-  int n, e;
-  cin >> n >> e;
-  int a, b;
+	int n, e;
+	cin >> n >> e;
+	int a, b;
 	Graph *graph = new Graph(n);
-  for (int i = 0; i < e; ++i) {
-    cin >> a >> b;
-    graph->addEdge(a, b);
-  }
+	for (int i = 0; i < e; ++i) {
+		cin >> a >> b;
+		graph->addEdge(a, b);
+	}
 	graph->count();
 }

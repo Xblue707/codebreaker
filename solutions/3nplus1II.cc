@@ -13,7 +13,9 @@ int main() {
 				counter++;
 			}
 		}
-		if (c <= counter) cout << n;
-		else cout << -1;
+		if (c <= counter)
+			cout << n;
+		else
+			cout << -1;
 	}
 }

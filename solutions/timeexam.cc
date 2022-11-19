@@ -3,7 +3,8 @@ using namespace std;
 int main() {
 	long long n;
 	cin >> n;
-	if (n < 60) printf("00%02lli", n);
+	if (n < 60)
+		printf("00%02lli", n);
 	else {
 		long long m = n % 60;
 		long long h = n / 60;

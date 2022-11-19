@@ -39,7 +39,8 @@ int main() {
 		} else if (inst.compare("IFZERO") == 0) {
 			top = lvm.top();
 			lvm.pop();
-			if (top == 0) index = cmds[index].second;
+			if (top == 0)
+				index = cmds[index].second;
 			else {
 				index++;
 			}

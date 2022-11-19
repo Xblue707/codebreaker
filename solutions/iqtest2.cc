@@ -71,9 +71,12 @@ int main() {
 	for (ll i = 0; i < t; ++i) {
 		ll p, k;
 		cin >> p >> k;
-		if (k == 0) cout << 0;
-		else if (k % (p - 1) == 0) cout << p - 1;
-		else cout << 0;
+		if (k == 0)
+			cout << 0;
+		else if (k % (p - 1) == 0)
+			cout << p - 1;
+		else
+			cout << 0;
 		cout << '\n';
 	}
 }

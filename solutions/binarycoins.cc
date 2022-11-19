@@ -9,7 +9,7 @@ int main() {
 
 	int cnt = 0;
 	for (ull i = 0; i < 64; ++i) {
-		if (money & (ull) ((ull) 1 << i)) cnt++;
+		if (money & (ull)((ull)1 << i)) cnt++;
 	}
 	cout << cnt;
 }

@@ -22,12 +22,12 @@ int main() {
 	loop(i, 0, n) cin >> l[i];
 
 	if (n == 1) {
-		cout << max(l[0], (ll) 0);
+		cout << max(l[0], (ll)0);
 		return 0;
 	}
-	mx[0] = max((ll) 0, l[0]);
+	mx[0] = max((ll)0, l[0]);
 	mx[1] = max(l[1], l[0]);
 
-	loop(j, 2, n) { mx[j] = max(mx[j - 1], max(l[j] + mx[j - 2], (ll) 0)); }
+	loop(j, 2, n) { mx[j] = max(mx[j - 1], max(l[j] + mx[j - 2], (ll)0)); }
 	cout << mx[n - 1];
 }

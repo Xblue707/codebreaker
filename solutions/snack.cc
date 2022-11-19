@@ -19,9 +19,11 @@ int main() {
 		// check if c is a digit - therefore not a mudball
 		if (isdigit(x))
 			currentPoints = x - '0'; // convert char to an integer value using ASCII
-		else currentPoints = -2; // if mudball found
+		else
+			currentPoints = -2; // if mudball found
 
-		current = max(current + currentPoints, currentPoints); // find the most optimum
+		current =
+				max(current + currentPoints, currentPoints); // find the most optimum
 		maximum = max(current, maximum);
 	}
 

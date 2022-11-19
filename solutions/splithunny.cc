@@ -14,8 +14,10 @@ int main() {
 
 		for (int j = 0; j < c; j++) {
 			cin >> s;
-			if (s == '.') v.push_back(0);
-			else v.push_back(-1);
+			if (s == '.')
+				v.push_back(0);
+			else
+				v.push_back(-1);
 		}
 
 		g.push_back(v);

@@ -23,7 +23,8 @@ int main() {
 
 			if (*cats.lower_bound(x) > y || cats.lower_bound(x) == cats.end())
 				cout << "YES\n";
-			else cout << "NO\n";
+			else
+				cout << "NO\n";
 		}
 	}
 }

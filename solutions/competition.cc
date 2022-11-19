@@ -5,7 +5,7 @@ const int N = 1e5 + 5;
 
 int A[N], B[N];
 
-pair<int, pair<int, int> > C[N];
+pair<int, pair<int, int>> C[N];
 
 int main() {
 	cin.tie(NULL);

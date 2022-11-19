@@ -19,8 +19,10 @@ int main() {
 		} else {
 			while (bricks.top() <= b) {
 				bricks.pop();
-				if (bricks.empty()) break;
-				else continue;
+				if (bricks.empty())
+					break;
+				else
+					continue;
 			}
 			bricks.push(b);
 		}
