@@ -52,6 +52,7 @@ void merge(int a, int b) {
 }
 
 int main() {
+	setup;
 	int n, m;
 	cin >> n >> m;
 	dsu.resize(n);
