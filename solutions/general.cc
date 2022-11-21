@@ -12,21 +12,59 @@ typedef unsigned long long ull;
 	cin.tie(nullptr);                 \
 	cout.tie(nullptr);
 #define nl '\n'
-typedef pair<int, int> ii;
-typedef vector<int> vi;
-typedef vector<ii> vii;
 #define pr pair
 #define vc vector
 #define dq deque
 #define qu queue
 #define pq priority_queue
-#define ma map
+#define mp map
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
 #define fi first
 #define se second
 #define all(c) (c).begin(), (c).end()
 #define sz(c) (ll)(c.size())
 #define pub push_back
 #define pob pop_back
-#define mp make_pair
+#define mpr make_pair
 #define eb emplace_back
 #define debug(x) cerr << #x << ": " << x << '\n';
+
+vi dsu, pwr;
+
+int find(int n) {
+	if (dsu[n] == n) return n;
+	return dsu[n] = find(dsu[n]);
+}
+
+void merge(int a, int b) {
+	a = find(a);
+	b = find(b);
+	if (a == b) {
+		cout << -1 << nl;
+		return;
+	} else if (pwr[a] < pwr[b])
+		swap(a, b);
+
+	dsu[b] = a;
+	cout << a + 1 << nl;
+}
+
+int main() {
+	int n, m;
+	cin >> n >> m;
+	dsu.resize(n);
+	pwr.resize(n);
+	rep(i, 0, n) {
+		cin >> pwr[i];
+		dsu[i] = i;
+	}
+
+	rep(i, 0, m) {
+		int a, b;
+		cin >> a >> b;
+		a--, b--;
+		merge(a, b);
+	}
+}

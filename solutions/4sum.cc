@@ -12,21 +12,53 @@ typedef unsigned long long ull;
 	cin.tie(nullptr);                 \
 	cout.tie(nullptr);
 #define nl '\n'
-typedef pair<int, int> ii;
-typedef vector<int> vi;
-typedef vector<ii> vii;
 #define pr pair
 #define vc vector
 #define dq deque
 #define qu queue
 #define pq priority_queue
-#define ma map
+#define mp map
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
 #define fi first
 #define se second
 #define all(c) (c).begin(), (c).end()
 #define sz(c) (ll)(c.size())
 #define pub push_back
 #define pob pop_back
-#define mp make_pair
+#define mpr make_pair
 #define eb emplace_back
 #define debug(x) cerr << #x << ": " << x << '\n';
+
+typedef pr<bool, ii> bi;
+
+int main() {
+	setup;
+	int a, b, c, d;
+	cin >> a >> b >> c >> d;
+	int as[a], bs[b], cs[c], ds[d];
+	map<int, bi> m;
+	rep(i, 0, a) cin >> as[i];
+	rep(i, 0, b) cin >> bs[i];
+	rep(i, 0, c) cin >> cs[i];
+	rep(i, 0, d) cin >> ds[i];
+
+	rep(i, 0, a) {
+		rep(j, 0, b) {
+			int s = as[i] + bs[j];
+			m[s] = bi(1, ii(as[i], bs[j]));
+		}
+	}
+
+	rep(i, 0, c) {
+		rep(j, 0, d) {
+			int s = cs[i] + ds[j];
+			if (m[-s].fi) {
+				cout << m[-s].se.fi << ' ' << m[-s].se.se << ' ' << cs[i] << ' '
+						 << ds[j] << nl;
+				return 0;
+			}
+		}
+	}
+}

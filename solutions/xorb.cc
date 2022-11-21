@@ -1,3 +1,4 @@
+// xorb
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -12,21 +13,36 @@ typedef unsigned long long ull;
 	cin.tie(nullptr);                 \
 	cout.tie(nullptr);
 #define nl '\n'
-typedef pair<int, int> ii;
-typedef vector<int> vi;
-typedef vector<ii> vii;
 #define pr pair
 #define vc vector
 #define dq deque
 #define qu queue
 #define pq priority_queue
-#define ma map
+#define mp map
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
 #define fi first
 #define se second
 #define all(c) (c).begin(), (c).end()
 #define sz(c) (ll)(c.size())
 #define pub push_back
 #define pob pop_back
-#define mp make_pair
+#define mpr make_pair
 #define eb emplace_back
 #define debug(x) cerr << #x << ": " << x << '\n';
+
+int main() {
+	setup;
+	ll x, y, b;
+	cin >> x >> y >> b;
+	ll ima(1), svar(0);
+	while (ima * b <= x || ima * b <= y) ima *= b;
+	while (ima) {
+		ll eins = (x - (x % ima)) / ima;
+		ll nis = (y - (y % ima)) / ima;
+		svar += (eins + nis) % b * ima;
+		ima /= b;
+	}
+	cout << svar << nl;
+}
