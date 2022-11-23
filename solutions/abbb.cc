@@ -42,9 +42,10 @@ int main() {
 		stack<char> k;
 		rep(i, 0, sz(s)) {
 			if (s[i] == 'B') {
-				// k.pop();
-				if (k.empty()) k.push('B');
-				else k.pop();
+				if (k.empty())
+					k.push('B');
+				else
+					k.pop();
 			} else
 				k.push('A');
 		}

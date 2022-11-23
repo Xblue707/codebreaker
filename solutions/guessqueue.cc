@@ -40,7 +40,6 @@ int main() {
 	multiset<int> m;
 	bool isp = 1, isq = 1, ism = 1, toggle = 1;
 	int op, num;
-	// bool toggle = 1;  // 0 - pop from left (min), 1 - pop from right (max)
 
 	rep(i, 0, n) {
 		cin >> op >> num; // query
