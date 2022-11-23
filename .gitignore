@@ -17,4 +17,5 @@
 *.exe
 *.out
 *.app
+*untitled*
 .vscode/
