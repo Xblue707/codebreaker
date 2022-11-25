@@ -1,25 +1,52 @@
-#include <array>
-#include <iostream>
+// lcs
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
+typedef long double ld;
+typedef unsigned long long ull;
+#define rep(x, start, end)                                                   \
+	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+			 ((start) < (end) ? x++ : x--))
+#define rap(i, v) for (auto i : (v))
+#define setup                       \
+	ios_base::sync_with_stdio(false); \
+	cin.tie(nullptr);                 \
+	cout.tie(nullptr);
+#define nl '\n'
+#define pr pair
+#define vc vector
+#define dq deque
+#define qu queue
+#define pq priority_queue
+#define mp map
+typedef pair<int, int> ii;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+#define fi first
+#define se second
+#define all(c) (c).begin(), (c).end()
+#define sz(c) (ll)(c.size())
+#define pub push_back
+#define pob pop_back
+#define mpr make_pair
+#define eb emplace_back
+#define debug(x) cerr << #x << ": " << x << '\n';
 
-array<array<int, 1000>, 1000> memo;
-array<string, 2> in;
+int dp[1000][1000];
+string a, b;
 
-int lcs(const int i, const int j) {
+int lcs(int i, int j) {
 	if (i < 0 || j < 0) return 0;
-
-	if (memo[i][j] >= 0) return memo[i][j];
-
-	if (in[0].at(i) == in[1].at(j))
-		memo[i][j] = 1 + lcs(i - 1, j - 1);
+	if (dp[i][j] >= 0) return dp[i][j];
+	if (a.at(i) == b.at(j))
+		dp[i][j] = lcs(i - 1, j - 1) + 1;
 	else
-		memo[i][j] = max(lcs(i, j - 1), lcs(i - 1, j));
-
-	return memo[i][j];
+		dp[i][j] = max(lcs(i, j - 1), lcs(i - 1, j));
+	return dp[i][j];
 }
 
 int main() {
-	for (int i = 0; i < 1000; i++) memo[i].fill(-1);
-	cin >> in[0] >> in[1];
-	cout << lcs(in[0].length() - 1, in[1].length() - 1);
+	cin >> a >> b;
+	memset(dp, -1, sizeof(dp));
+	cout << lcs(a.length() - 1, b.length() - 1);
 }
