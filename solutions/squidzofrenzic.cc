@@ -10,27 +10,27 @@ using ull = unsigned long long;
 #define f0r(i, n) for (ll i = 0; i < (n); i++)
 #define r0f(i, n) for (ll i = (n); i >= 0; i--)
 #define far(i, v) for (auto i : v)
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 template <typename T>
 inline void in(T &inVar) {
-	cin >> inVar;
+  cin >> inVar;
 }
 template <typename T, typename... S>
 inline void in(T &inVar, S &...args) {
-	cin >> inVar;
-	in(args...);
+  cin >> inVar;
+  in(args...);
 }
 template <typename T>
 inline void out(T outVar) {
-	cout << outVar << '\n';
+  cout << outVar << '\n';
 }
 template <typename T, typename... S>
 inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+  cout << outVar << ' ';
+  out(args...);
 }
 using vi = vector<ll>;
 using pi = pair<ll, ll>;
@@ -52,36 +52,36 @@ vc<int> v;
 int n, m;
 
 int chk(int x) {
-	int res = 0, cur = 0;
-	f0r(i, n) {
-		if (v[i] > x) return 0;
-		if (cur + v[i] > x) {
-			cur = v[i];
-			res++;
-		} else
-			cur += v[i];
-	}
-	if (res < m) return 1;
-	return 0;
+  int res = 0, cur = 0;
+  f0r(i, n) {
+    if (v[i] > x) return 0;
+    if (cur + v[i] > x) {
+      cur = v[i];
+      res++;
+    } else
+      cur += v[i];
+  }
+  if (res < m) return 1;
+  return 0;
 }
 
 int main() {
-	in(n, m);
-	v.resize(n);
-	f0r(i, n) in(v[i]);
+  in(n, m);
+  v.resize(n);
+  f0r(i, n) in(v[i]);
 
-	int l = 0, r = 2;
-	while (true) {
-		if (chk(r)) break;
-		l = r;
-		r *= 2;
-	}
-	while (l < r) {
-		int mid = (l + r) / 2;
-		if (chk(mid))
-			r = mid;
-		else
-			l = mid + 1;
-	}
-	out(l);
+  int l = 0, r = 2;
+  while (true) {
+    if (chk(r)) break;
+    l = r;
+    r *= 2;
+  }
+  while (l < r) {
+    int mid = (l + r) / 2;
+    if (chk(mid))
+      r = mid;
+    else
+      l = mid + 1;
+  }
+  out(l);
 }

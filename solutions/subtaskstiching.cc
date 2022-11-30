@@ -1,9 +1,34 @@
-// if you're lucky, you might get AC on the first try
-#include <experimental/random>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
+typedef long long ll;
+typedef long double ld;
+typedef unsigned long long ull;
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
+#define rap(i, v) for (auto i : (v))
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
+typedef vector<ll> vi;
+typedef pair<ll, ll> pi;
+typedef vector<pi> vpi;
+#define nl '\n'
+#define vc vector
+#define dq deque
+#define qu queue
+#define pq priority_queue
+#define mp map
+#define fi first
+#define se second
+#define all(c) (c).begin(), (c).end()
+#define sz(c) (int)(c.size())
+#define pub push_back
+#define pob pop_back
+#define mpr make_pair
+#define eb emplace_back
+#define debug(x) cout << #x << ": " << x << '\n';
+mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
 
-int main() {
-	int i = experimental::randint(1, 2);
-	cout << i;
-}
+int main() { cout << rng() % 2 + 1; }

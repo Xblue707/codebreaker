@@ -4,14 +4,14 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define each(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -34,13 +34,17 @@ typedef vector<ii> vii;
 mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
 
 int main() {
-	int n; cin >> n;
-	int cnt = 0;
-	rep(i, 0, n) {
-		string s; cin >> s;
-		if (s == "chugga") cnt++;
-	}
-		
-	if (cnt%2==0) cout << "CHOO choo";
-	else cout << "choo CHOO";
+  int n;
+  cin >> n;
+  int cnt = 0;
+  rep(i, 0, n) {
+    string s;
+    cin >> s;
+    if (s == "chugga") cnt++;
+  }
+
+  if (cnt % 2 == 0)
+    cout << "CHOO choo";
+  else
+    cout << "choo CHOO";
 }

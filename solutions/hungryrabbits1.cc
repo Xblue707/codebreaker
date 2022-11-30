@@ -4,14 +4,14 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define each(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -38,31 +38,31 @@ vc<pr<ll, ll>> pile;
 bool cmp(pr<ll, ll> a, pr<ll, ll> b) { return a.se < b.se; }
 
 int main() {
-	setup;
-	cin >> n;
+  setup;
+  cin >> n;
 
-	// cin
-	rep(i, 0, n) {
-		ll x;
-		cin >> x;
+  // cin
+  rep(i, 0, n) {
+    ll x;
+    cin >> x;
 
-		// consider the time it takes to finish the pile if we put n rabbits from
-		// the left and n rabbits from the right
-		if (x != 0) pile.pub({x + i, x + n - i - 1});
-	}
+    // consider the time it takes to finish the pile if we put n rabbits from
+    // the left and n rabbits from the right
+    if (x != 0) pile.pub({x + i, x + n - i - 1});
+  }
 
-	// if empty, ie. all elements are 0, then cout 0
-	if (pile.empty()) {
-		cout << 0 << nl;
-		return 0;
-	}
+  // if empty, ie. all elements are 0, then cout 0
+  if (pile.empty()) {
+    cout << 0 << nl;
+    return 0;
+  }
 
-	// otherwise sort the piles
-	sort(all(pile));
-	ll ans = pile.back().fi;  // take the maximum
+  // otherwise sort the piles
+  sort(all(pile));
+  ll ans = pile.back().fi; // take the maximum
 
-	sort(all(pile), cmp);
-	ans = max(ans,
-						pile.back().se);  // then take the maximum for all non-empty piles
-	cout << ans << nl;
+  sort(all(pile), cmp);
+  ans = max(ans,
+            pile.back().se); // then take the maximum for all non-empty piles
+  cout << ans << nl;
 }

@@ -4,14 +4,14 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define rap(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 typedef vector<ll> vi;
 typedef pair<ll, ll> pi;
 typedef vector<pi> vpi;
@@ -32,14 +32,14 @@ typedef vector<pi> vpi;
 #define debug(x) cout << #x << ": " << x << '\n';
 
 int main() {
-	setup;
-	ld n, k;
-	cin >> n >> k;
-	ld res = 0;
-	rep(i, 0, n) {
-		ld a, b;
-		cin >> a >> b;
-		if (a < (k / b)) res++;
-	}
-	cout << res;
+  setup;
+  ld n, k;
+  cin >> n >> k;
+  ld res = 0;
+  rep(i, 0, n) {
+    ld a, b;
+    cin >> a >> b;
+    if (a < (k / b)) res++;
+  }
+  cout << res;
 }

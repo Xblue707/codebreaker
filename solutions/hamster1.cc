@@ -8,27 +8,27 @@ using namespace std;
 #define FOR(i, a, b) for (int i = (a); i <= (b); i++)
 
 int main() {
-	// fast io
-	ios_base::sync_with_stdio(false);
-	cin.tie(nullptr);
-	cout.tie(nullptr);
+  // fast io
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+  cout.tie(nullptr);
 
-	// setup
-	int n, k;
-	cin >> n >> k;
-	vector<int> arr(n);
+  // setup
+  int n, k;
+  cin >> n >> k;
+  vector<int> arr(n);
 
-	// input
-	REP(i, n) { cin >> arr[i]; }
+  // input
+  REP(i, n) { cin >> arr[i]; }
 
-	// dp array
-	vector<int> dp(n, MAX);
-	dp[0] = 0;
+  // dp array
+  vector<int> dp(n, MAX);
+  dp[0] = 0;
 
-	FOR(i, 1, n - 1) {
-		FOR(j, max(0, i - k), i - 1)
-		dp[i] = min(dp[i], abs(arr[i] - arr[j]) + dp[j]);
-	}
+  FOR(i, 1, n - 1) {
+    FOR(j, max(0, i - k), i - 1)
+    dp[i] = min(dp[i], abs(arr[i] - arr[j]) + dp[j]);
+  }
 
-	cout << dp[n - 1] << '\n';
+  cout << dp[n - 1] << '\n';
 }

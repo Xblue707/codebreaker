@@ -9,27 +9,27 @@ typedef unsigned long long ull;
 #define f0r(i, n) for (ll i = 0; i < (n); i++)
 #define r0f(i, n) for (ll i = (n); i >= 0; i--)
 #define far(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 template <typename T>
 inline void in(T& inVar) {
-	cin >> inVar;
+  cin >> inVar;
 }
 template <typename T, typename... S>
 inline void in(T& inVar, S&... args) {
-	cin >> inVar;
-	in(args...);
+  cin >> inVar;
+  in(args...);
 }
 template <typename T>
 inline void out(T outVar) {
-	cout << outVar << '\n';
+  cout << outVar << '\n';
 }
 template <typename T, typename... S>
 inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+  cout << outVar << ' ';
+  out(args...);
 }
 typedef vector<ll> vi;
 typedef pair<ll, ll> pi;
@@ -47,20 +47,20 @@ typedef vector<pi> vpi;
 #define pb push_back
 #define mp make_pair
 int main() {
-	setup;
-	ll n, q;
-	in(n, q);
-	set<int> s;
-	ll ans[500005];
-	f0r(i, n) {
-		ll x;
-		in(x);
-		s.insert(x);
-		ans[i] = sz(s);
-	}
-	f0r(i, q) {
-		ll j;
-		in(j);
-		cout << ans[j - 1] << ' ';
-	}
+  setup;
+  ll n, q;
+  in(n, q);
+  set<int> s;
+  ll ans[500005];
+  f0r(i, n) {
+    ll x;
+    in(x);
+    s.insert(x);
+    ans[i] = sz(s);
+  }
+  f0r(i, q) {
+    ll j;
+    in(j);
+    cout << ans[j - 1] << ' ';
+  }
 }

@@ -3,14 +3,14 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define rap(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -33,16 +33,16 @@ typedef vector<ii> vii;
 mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
 
 int main() {
-	setup;
-	ll t, a, b, k;
-	cin >> t;
-	while (t--) {
-		cin >> a >> b >> k;
-		int x = a / k, y = b / k;
-		if (x == y)
-			cout << "Oolimry";
-		else
-			cout << "Errorgorn";
-		cout << nl;
-	}
+  setup;
+  ll t, a, b, k;
+  cin >> t;
+  while (t--) {
+    cin >> a >> b >> k;
+    int x = a / k, y = b / k;
+    if (x == y)
+      cout << "Oolimry";
+    else
+      cout << "Errorgorn";
+    cout << nl;
+  }
 }

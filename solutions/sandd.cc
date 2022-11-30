@@ -10,27 +10,27 @@ using ull = unsigned long long;
 #define f0r(i, n) for (ll i = 0; i < (n); i++)
 #define r0f(i, n) for (ll i = (n); i >= 0; i--)
 #define far(i, v) for (auto i : v)
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 template <typename T>
 inline void in(T &inVar) {
-	cin >> inVar;
+  cin >> inVar;
 }
 template <typename T, typename... S>
 inline void in(T &inVar, S &...args) {
-	cin >> inVar;
-	in(args...);
+  cin >> inVar;
+  in(args...);
 }
 template <typename T>
 inline void out(T outVar) {
-	cout << outVar << '\n';
+  cout << outVar << '\n';
 }
 template <typename T, typename... S>
 inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+  cout << outVar << ' ';
+  out(args...);
 }
 using vi = vector<ll>;
 using pi = pair<ll, ll>;
@@ -49,37 +49,37 @@ using vpi = vector<pi>;
 #define sz(v) (ll)(v.size())
 
 int getPrice(int P) {
-	int lo = 0, hi = P, mid, result = -1;
-	long long sup, dem;
+  int lo = 0, hi = P, mid, result = -1;
+  long long sup, dem;
 
-	if (supply(0) > demand(0) || supply(P) < demand(P)) {
-		return -1;
-	}
+  if (supply(0) > demand(0) || supply(P) < demand(P)) {
+    return -1;
+  }
 
-	while (lo <= hi) {
-		mid = (lo + hi) / 2;
-		sup = supply(mid);
-		dem = demand(mid);
+  while (lo <= hi) {
+    mid = (lo + hi) / 2;
+    sup = supply(mid);
+    dem = demand(mid);
 
-		if (sup == dem) {
-			result = mid;
-			break;
-		} else if (sup > dem) {
-			if (lo == hi) {
-				result = mid;
-				break;
-			}
-			hi = mid - 1;
-			result = mid;
-		} else if (sup < dem) { // sup < dem
-			if (lo == hi) {
-				result = mid;
-				break;
-			}
-			lo = mid + 1;
-			result = mid;
-		}
-	}
+    if (sup == dem) {
+      result = mid;
+      break;
+    } else if (sup > dem) {
+      if (lo == hi) {
+        result = mid;
+        break;
+      }
+      hi = mid - 1;
+      result = mid;
+    } else if (sup < dem) { // sup < dem
+      if (lo == hi) {
+        result = mid;
+        break;
+      }
+      lo = mid + 1;
+      result = mid;
+    }
+  }
 
-	return result;
+  return result;
 }

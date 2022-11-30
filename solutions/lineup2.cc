@@ -8,13 +8,13 @@ typedef unsigned long long int ull;
 typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define each(i, v) for (auto i : (v))
-#define fast                        \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(NULL);
+#define fast \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(NULL);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -32,25 +32,25 @@ typedef vector<ii> vii;
 mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
 
 int main() {
-	fast;
-	ll n, q;
-	cin >> n >> q;
-	vc<ll> v;
-	while (q--) {
-		int j;
-		cin >> j;
-		if (j == 1) {
-			ll x;
-			cin >> x;
-			v.pub(x);
-		} else if (j == 2) {
-			v.pob();
-		}
-	}
+  fast;
+  ll n, q;
+  cin >> n >> q;
+  vc<ll> v;
+  while (q--) {
+    int j;
+    cin >> j;
+    if (j == 1) {
+      ll x;
+      cin >> x;
+      v.pub(x);
+    } else if (j == 2) {
+      v.pob();
+    }
+  }
 
-	auto me(max_element(all(v)));
-	if (me == v.end())
-		cout << 0 << nl;
-	else
-		cout << *me << nl;
+  auto me(max_element(all(v)));
+  if (me == v.end())
+    cout << 0 << nl;
+  else
+    cout << *me << nl;
 }

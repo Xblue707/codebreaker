@@ -8,13 +8,13 @@ typedef unsigned long long int ull;
 typedef pair<int, int> ii;
 typedef vector<int> vi;
 typedef vector<ii> vii;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define each(i, v) for (auto i : (v))
-#define fast                        \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(NULL);
+#define fast \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(NULL);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -32,13 +32,13 @@ typedef vector<ii> vii;
 mt19937 rng(chrono::system_clock::now().time_since_epoch().count());
 
 int main() {
-	fast;
-	int n;
-	cin >> n;
-	vi a(n), b(n);
-	rep(i, 0, n) cin >> a[i];
-	rep(i, 0, n) cin >> b[i];
-	ll cnt(0);
-	rep(i, 0, n) if (a[i] == b[i]) cnt++;
-	cout << cnt << nl;
+  fast;
+  int n;
+  cin >> n;
+  vi a(n), b(n);
+  rep(i, 0, n) cin >> a[i];
+  rep(i, 0, n) cin >> b[i];
+  ll cnt(0);
+  rep(i, 0, n) if (a[i] == b[i]) cnt++;
+  cout << cnt << nl;
 }

@@ -8,27 +8,27 @@ typedef unsigned long long ull;
 #define f0r(i, n) for (ll i = 0; i < (n); i++)
 #define r0f(i, n) for (ll i = (n); i >= 0; i--)
 #define far(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 template <typename T>
 inline void in(T& inVar) {
-	cin >> inVar;
+  cin >> inVar;
 }
 template <typename T, typename... S>
 inline void in(T& inVar, S&... args) {
-	cin >> inVar;
-	in(args...);
+  cin >> inVar;
+  in(args...);
 }
 template <typename T>
 inline void out(T outVar) {
-	cout << outVar << '\n';
+  cout << outVar << '\n';
 }
 template <typename T, typename... S>
 inline void out(T outVar, S... args) {
-	cout << outVar << ' ';
-	out(args...);
+  cout << outVar << ' ';
+  out(args...);
 }
 typedef vector<ll> vi;
 typedef pair<ll, ll> pi;
@@ -48,11 +48,11 @@ typedef vector<pi> vpi;
 /* do not delete */
 
 int main() {
-	setup;
-	int t;
-	in(t);
-	int a[t];
-	f0r(i, t) in(a[i]);
-	out(*max_element(a, a + t));
-	return 0;
+  setup;
+  int t;
+  in(t);
+  int a[t];
+  f0r(i, t) in(a[i]);
+  out(*max_element(a, a + t));
+  return 0;
 }

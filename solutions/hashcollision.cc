@@ -1,18 +1,19 @@
 // hashcollision
-// #include "hashcollision.h" // remember to include this!
+#include "hashcollision.h" // remember to include this!
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define rap(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -49,15 +50,15 @@ typedef vector<ii> vii;
 #include <stack>
 #include <vector>
 using namespace std;
-#define bit(x, i) (x & (1 << i))          // select the bit of position i of x
+#define bit(x, i) (x & (1 << i)) // select the bit of position i of x
 #define lowbit(x) ((x) & ((x) ^ ((x)-1))) // get the lowest bit of x
 #define hBit(msb, n) \
-	asm("bsrl %1,%0"   \
-			: "=r"(msb)    \
-			: "r"(n)) // get the highest bit of x, maybe the fastest
+  asm("bsrl %1,%0" \
+      : "=r"(msb) \
+      : "r"(n)) // get the highest bit of x, maybe the fastest
 #define max(a, b) (a < b ? b : a)
 #define abs(x) \
-	(x < 0 ? (-x) : x) // big bug here if "-x" is not surrounded by "()"
+  (x < 0 ? (-x) : x) // big bug here if "-x" is not surrounded by "()"
 #define IN(i, l, r) (l < i && i < r) // the next for are for checking bound
 #define LINR(i, l, r) (l <= i && i <= r)
 #define LIN(i, l, r) (l <= i && i < r)
@@ -67,49 +68,49 @@ using namespace std;
 #define FF(i, L, R) for (int i = L; i > R; i--)
 #define FFE(i, L, R) for (int i = L; i >= R; i--)
 #define getI(a) \
-	scanf("%d", &a) // next three are handy ways to get ints, it's also force you
-									// to use '&' sign
+  scanf("%d", &a) // next three are handy ways to get ints, it's also force you
+                  // to use '&' sign
 #define getII(a, b) scanf("%d%d", &a, &b)
 #define getIII(a, b, c) scanf("%d%d%d", &a, &b, &c)
 #define wez(n) \
-	int(n);      \
-	scanf(       \
-			"%d",    \
-			&(n)) // handy if the input is right after the definition of a variable
+  int(n); \
+  scanf( \
+      "%d", \
+      &(n)) // handy if the input is right after the definition of a variable
 #define wez2(n, m) \
-	int(n), (m);     \
-	scanf("%d %d", &(n), &(m))
+  int(n), (m); \
+  scanf("%d %d", &(n), &(m))
 #define wez3(n, m, k) \
-	int(n), (m), (k);   \
-	scanf("%d %d %d", &(n), &(m), &(k))
+  int(n), (m), (k); \
+  scanf("%d %d %d", &(n), &(m), &(k))
 #define TESTS wez(testow) while (testow--) // for multiple cases problems
 #define whileZ \
-	int T;       \
-	getI(T);     \
-	while (T--)                  // the same as above
+  int T; \
+  getI(T); \
+  while (T--) // the same as above
 #define getS(x) scanf("%s", x) // get a char* string
 #define clr(a, x) \
-	memset(a, x, sizeof(a)) // set elements of array to some
-													// value
+  memset(a, x, sizeof(a)) // set elements of array to some
+                          // value
 #define char2Int(c) (c - '0')
 #define lastEle(vec) vec[vec.size() - 1]
 #define SZ(x) ((int)((x).size()))
 #define REMAX(a, b) (a) = max((a), (b)) // set a to the maximum of a and b
 #define REMIN(a, b) (a) = min((a), (b));
-#define FOREACH(i, t)                                 \
-	for (typeof(t.begin()) i = t.begin(); i != t.end(); \
-			 i++)                           // traverse an STL data structure
+#define FOREACH(i, t) \
+  for (typeof(t.begin()) i = t.begin(); i != t.end(); \
+       i++) // traverse an STL data structure
 #define ALL(c) (c).begin(), (c).end() // handy for function like "sort()"
 #define PRESENT(c, x) ((c).find(x) != (c).end())
 #define CPRESENT(c, x) (find(ALL(c), x) != (c).end())
 #define ll \
-	long long // data types used often, but you don't want to type them time by
-						// time
+  long long // data types used often, but you don't want to type them time by
+            // time
 #define ull unsigned long long
 #define ui unsigned int
 #define us unsigned short
 #define IOS \
-	ios_base::sync_with_stdio(0); // to synchronize the input of cin and scanf
+  ios_base::sync_with_stdio(0); // to synchronize the input of cin and scanf
 #define INF 1001001001
 #define PI 3.1415926535897932384626
 // for map, pair
@@ -131,15 +132,15 @@ typedef pair<int, int> ii;
 // directions
 const int fx[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 const int fxx[8][2] = {{0, 1}, {0, -1}, {1, 0},  {-1, 0},
-											 {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
+                       {1, 1}, {1, -1}, {-1, 1}, {-1, -1}};
 template <typename T, typename TT>
 ostream& operator<<(ostream& s, pair<T, TT> t) {
-	return s << "(" << t.first << "," << t.second << ")";
+  return s << "(" << t.first << "," << t.second << ")";
 }
 template <typename T>
 ostream& operator<<(ostream& s, vector<T> t) {
-	F(i, 0, SZ(t)) s << t[i] << " ";
-	return s;
+  F(i, 0, SZ(t)) s << t[i] << " ";
+  return s;
 }
 
 /* [taken from https://hcicppguide.me]
@@ -185,8 +186,8 @@ A very simple program allowing you to AC this CP problem
 using namespace std;
 
 int main() {
-	cout << "Hello World";
-	return 0;
+  cout << "Hello World";
+  return 0;
 }
 */
 
@@ -231,10 +232,10 @@ Using scanf and printf from the C STL will decrease your runtime. Example:
 using namespace std;
 
 int main() {
-	int a;
-	printf("Enter an integer: ");
-	scanf("%d", &a);
-	printf("Number: %d", a);
+  int a;
+  printf("Enter an integer: ");
+  scanf("%d", &a);
+  printf("Number: %d", a);
 }
 Debug Ouput
 Debug output should be written to std::cerr (stderr), not std::cout (stdout)
@@ -379,15 +380,15 @@ access.
 #include <iostream>
 using namespace std;
 int main() {
-	int a;
-	cout << "enter your age: ";
-	cin >> a;
+  int a;
+  cout << "enter your age: ";
+  cin >> a;
 
-	if (a < 18) {
-		cout << "access denied";
-	} else {
-		cout << "have a drink!";
-	}
+  if (a < 18) {
+    cout << "access denied";
+  } else {
+    cout << "have a drink!";
+  }
 }
 conditions in if-statements are surrounded by parentheses and the following code
 to be executed is in curly braces.
@@ -397,17 +398,17 @@ multiple conditions can be expressed with else if:
 #include <iostream>
 using namespace std;
 int main() {
-	int a;
-	cout << "enter your age: ";
-	cin >> a;
+  int a;
+  cout << "enter your age: ";
+  cin >> a;
 
-	if (a < 18) {
-		cout << "you cannot drink nor smoke.";
-	} else if (a < 21) {
-		cout << "you can drink, but not smoke.";
-	} else {
-		cout << "you can do both! welcome to adulthood!";
-	}
+  if (a < 18) {
+    cout << "you cannot drink nor smoke.";
+  } else if (a < 21) {
+    cout << "you can drink, but not smoke.";
+  } else {
+    cout << "you can do both! welcome to adulthood!";
+  }
 }
 Logical Operators
 if multiple conditions are to be satisfied, the following can be used.
@@ -443,15 +444,15 @@ any of these parts can be ommited.
 #include <iostream>
 using namespace std;
 int main() {
-	//  initialize, cond., inc./dec.
-	//  output: 1 2 3 4 5
-	for (int i = 1; i <= 5; i++) {
-		cout << i << ' ';
-	}
-	//  output: 4 3 2 1
-	for (int i = 4; i > 0; i--) {
-		cout << i << ' ';
-	}
+  //  initialize, cond., inc./dec.
+  //  output: 1 2 3 4 5
+  for (int i = 1; i <= 5; i++) {
+    cout << i << ' ';
+  }
+  //  output: 4 3 2 1
+  for (int i = 4; i > 0; i--) {
+    cout << i << ' ';
+  }
 }
 While Loop
 if you didn't have a certain number of times the loop should run, a loop can
@@ -462,12 +463,12 @@ the block of code inside the loop will repeat as long as the condition is true.
 #include <iostream>
 using namespace std;
 int main() {
-	int i = 10;
-	while (i > 0) { // put condition in parens.
-		cout << i << ' ';
-		i--;
-	}
-	// output: 10 9 8 7 6 5 4 3 2 1
+  int i = 10;
+  while (i > 0) { // put condition in parens.
+    cout << i << ' ';
+    i--;
+  }
+  // output: 10 9 8 7 6 5 4 3 2 1
 }
 Functions
 functions define a block of code to be reused throughout the program at
@@ -482,8 +483,8 @@ using namespace std;
 int sum(int a, int b, int c) { return a + b + c; }
 
 int main() {
-	cout << sum(1, 2, 3);
-	// output: 6
+  cout << sum(1, 2, 3);
+  // output: 6
 }
 normally, a function is expected to return a certain value after the operations
 inside have been completed. these values take the c++ datatypes we've seen
@@ -504,16 +505,16 @@ returns a string.
 string add(string a, string b, string c) { return a + b + c; }
 
 int main() {
-	cout << add("ab", "cd", "ef");
-	// output: abcdef
+  cout << add("ab", "cd", "ef");
+  // output: abcdef
 }
 bool function
 returns a boolean value: true or false.
 
 bool check(int a, int b, int c) {
-	if (a + b > c)
-		return true;
-	return false;
+  if (a + b > c)
+    return true;
+  return false;
 }
 note: the else keyword isn't needed here, because when return is called, the
 function ends, ignoring everything else after it.
@@ -542,14 +543,14 @@ Here's a short snippet showing what arrays can do:
 using namespace std;
 
 int main() {
-	int arr[5];  // defines an array of ints with size 5
-	arr[0] = 1;  // sets the first element of the array to 1
-	arr[3] = 57; // sets the fourth element to 57
+  int arr[5];  // defines an array of ints with size 5
+  arr[0] = 1;  // sets the first element of the array to 1
+  arr[3] = 57; // sets the fourth element to 57
 
-	cout << arr[3];
-	cin >> arr[2]; // get the user to input the third element of the array
+  cout << arr[3];
+  cin >> arr[2]; // get the user to input the third element of the array
 
-	cout << arr.size(); // size of the array
+  cout << arr.size(); // size of the array
 }
 Here is the basic code to input an array:
 
@@ -557,12 +558,12 @@ Here is the basic code to input an array:
 using namespace std;
 
 int main() {
-	int n;
-	cin >> n;
-	int x[n];
-	for (int i = 0; i < n; ++i) {
-		cin >> x[i];
-	}
+  int n;
+  cin >> n;
+  int x[n];
+  for (int i = 0; i < n; ++i) {
+    cin >> x[i];
+  }
 }
 Vectors
 Flexible-sized arrays with the capability to append elements (from the end) and
@@ -574,21 +575,21 @@ Erasing elements from anywhere in the vector is also allowed.
 using namespace std;
 
 int main() {
-	vector<int> v;  // defines a vector of ints
-	v.push_back(5); // appends 5 to the vector
-	v.push_back(9);
-	v.push_back(6);
-	v.push_back(0);
+  vector<int> v;  // defines a vector of ints
+  v.push_back(5); // appends 5 to the vector
+  v.push_back(9);
+  v.push_back(6);
+  v.push_back(0);
 
-	v.pop_back(); // now what does the vector contain?
+  v.pop_back(); // now what does the vector contain?
 
-	cout << v.size();                     // size of the vector
-	cout << v.front() << ' ' << v.back(); // first and last elements
+  cout << v.size();                     // size of the vector
+  cout << v.front() << ' ' << v.back(); // first and last elements
 
-	sort(v.begin(), v.end()); // sorts the vector
+  sort(v.begin(), v.end()); // sorts the vector
 
-	for (auto i : v)
-		cout << i << ' '; // iterates through every element in the vector
+  for (auto i : v)
+    cout << i << ' '; // iterates through every element in the vector
 }
 Deques
 Pronounced 'deck' or 'd-q'.
@@ -600,23 +601,23 @@ the back) elements. It can also pop elements from the front and back.
 using namespace std;
 
 int main() {
-	deque<long> d; // creates a deque of long ints
+  deque<long> d; // creates a deque of long ints
 
-	// gets the user to cin 5 elements and store them in the deque
-	for (int i = 0; i < 5; i++) {
-		long a;
-		cin >> a;
-		d.push_back(a);
-	}
+  // gets the user to cin 5 elements and store them in the deque
+  for (int i = 0; i < 5; i++) {
+    long a;
+    cin >> a;
+    d.push_back(a);
+  }
 
-	d.push_front(55); // now 55 is at the front
+  d.push_front(55); // now 55 is at the front
 
-	// d.size(), d.front() and d.back() still work
-	// sort(d.begin(), d.end() still works)
+  // d.size(), d.front() and d.back() still work
+  // sort(d.begin(), d.end() still works)
 
-	d.pop_back();
-	d.pop_front();
-	cout << "oh bother there are only " << d.size() << " elements left.";
+  d.pop_back();
+  d.pop_front();
+  cout << "oh bother there are only " << d.size() << " elements left.";
 }
 Stacks
 Stacks are basically stacks of roti prata (or your mountain of procrastinated
@@ -629,17 +630,17 @@ of sick freak would take prata from the bottom of the stack?)
 using namespace std;
 
 int main() {
-	stack<int> s;
-	s.push(5);
-	s.push(7);
-	s.push(69);
+  stack<int> s;
+  s.push(5);
+  s.push(7);
+  s.push(69);
 
-	cout << s.top() << " is currently 1st place in kahoot\n";
-	cout << "there are " << s.size() << " players\n";
+  cout << s.top() << " is currently 1st place in kahoot\n";
+  cout << "there are " << s.size() << " players\n";
 
-	while (!s.empty())
-		s.pop(); // check if the stack is empty, if not, keep popping!
-	cout << s.size() << " more players left\n";
+  while (!s.empty())
+    s.pop(); // check if the stack is empty, if not, keep popping!
+  cout << s.size() << " more players left\n";
 }
 Queues
 Like the perpetually long canteen queue in the HS Canteen during 1:30 pm lunch
@@ -651,22 +652,22 @@ programming for 72 hours straight).
 using namespace std;
 
 int main() {
-	queue<int> q;
-	q.push(5);
-	q.push(4);
-	q.push(4);
-	q.push(3);
+  queue<int> q;
+  q.push(5);
+  q.push(4);
+  q.push(4);
+  q.push(3);
 
-	cout << q.size() << '\n';
+  cout << q.size() << '\n';
 
-	// quick way to see all the elements in the queue
-	while (!q.empty()) {
-		cout << q.front() << ' ';
-		q.pop();
-	}
+  // quick way to see all the elements in the queue
+  while (!q.empty()) {
+    cout << q.front() << ' ';
+    q.pop();
+  }
 
-	// NOTE: only 1 occurrence of 4 is printed out,
-					 // because a queue removes duplicate values
+  // NOTE: only 1 occurrence of 4 is printed out,
+           // because a queue removes duplicate values
 }
 Priority Queues
 Like a queue, but the most popular boy is now at the end perpetually. Priority
@@ -677,18 +678,18 @@ pushed in.
 using namespace std;
 
 int main() {
-	priority_queue<int> pq;
-	pq.push(5);
-	pq.push(6);
-	pq.push(3);
+  priority_queue<int> pq;
+  pq.push(5);
+  pq.push(6);
+  pq.push(3);
 
-	cout << pq.size() << '\n';
+  cout << pq.size() << '\n';
 
-	// NOTE: notice that the elements are printed in ascending order!
-	while (!pq.empty()) {
-		cout << pq.front() << ' ';
-		q.pop();
-	}
+  // NOTE: notice that the elements are printed in ascending order!
+  while (!pq.empty()) {
+    cout << pq.front() << ' ';
+    q.pop();
+  }
 }
 Maps and Unordered Maps
 A map is a key-value data structure, with a key being linked to a value (can be
@@ -700,21 +701,21 @@ You can think of these as pairs of keys and locks.
 using namespace std;
 
 int main() {
-	map<string, int> m;
-	m["yo"] = 6;
-	m["mom"] = 9;
-	m["so"] = 4;
-	m["fat"] = 420;
+  map<string, int> m;
+  m["yo"] = 6;
+  m["mom"] = 9;
+  m["so"] = 4;
+  m["fat"] = 420;
 
-	cout << m["fat"] << '\n';
-	cout << m.size() << '\n';
+  cout << m["fat"] << '\n';
+  cout << m.size() << '\n';
 
-	m.insert(pair<string, int>("abc", 123)); // can also insert like this
+  m.insert(pair<string, int>("abc", 123)); // can also insert like this
 
-	// loop through key and value
-	for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-		cout << itr->first << ": " << itr->second << 'n';
-	}
+  // loop through key and value
+  for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
+    cout << itr->first << ": " << itr->second << 'n';
+  }
 }
 Unordered maps are different because they're slightly faster than the map.
 
@@ -722,21 +723,21 @@ Unordered maps are different because they're slightly faster than the map.
 using namespace std;
 
 int main() {
-	unordered_map<string, int> m;
-	m["yo"] = 6;
-	m["mom"] = 9;
-	m["so"] = 4;
-	m["fat"] = 420;
+  unordered_map<string, int> m;
+  m["yo"] = 6;
+  m["mom"] = 9;
+  m["so"] = 4;
+  m["fat"] = 420;
 
-	cout << m["fat"] << '\n';
-	cout << m.size() << '\n';
+  cout << m["fat"] << '\n';
+  cout << m.size() << '\n';
 
-	m.insert(pair<string, int>("abc", 123)); // can also insert like this
+  m.insert(pair<string, int>("abc", 123)); // can also insert like this
 
-	// loop through key and value
-	for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
-		cout << itr->first << ": " << itr->second << 'n';
-	}
+  // loop through key and value
+  for (auto itr = marks.begin(); itr != marks.end(); ++itr) {
+    cout << itr->first << ": " << itr->second << 'n';
+  }
 }
 Sets and Unordered Sets
 A set is a more picky vector, it:
@@ -747,24 +748,24 @@ sorts every time you insert an element
 using namespace std;
 
 int main() {
-	set<int> s;
+  set<int> s;
 
-	s.insert(40);
-	s.insert(35);
-	s.insert(55);
+  s.insert(40);
+  s.insert(35);
+  s.insert(55);
 
-	set<int>::iterator itr; // defines an iterator of the set
-	cout << "this set weighs " << s.size() << " kg\n";
+  set<int>::iterator itr; // defines an iterator of the set
+  cout << "this set weighs " << s.size() << " kg\n";
 
-	// prints all the elements in the set
-	for (itr = s.begin(); itr != s.end(); s++)
-		cout << *itr << " ";
+  // prints all the elements in the set
+  for (itr = s.begin(); itr != s.end(); s++)
+    cout << *itr << " ";
 
-	s.erase(s.begin(), s.find(55)); // remove 55
+  s.erase(s.begin(), s.find(55)); // remove 55
 
-	// lower_bound() and upper_bound(): returns an iterator to the first element
-	// which is equal to OR before / after the element in the set
-	cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
+  // lower_bound() and upper_bound(): returns an iterator to the first element
+  // which is equal to OR before / after the element in the set
+  cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
 }
 Unlike the set, and unordered set does not sort, so instead of the usual
 O(log⁡N)\mathcal{O}(\log N)O(logN), insertions are O(1)\mathcal{O}(1)O(1).
@@ -773,35 +774,35 @@ O(log⁡N)\mathcal{O}(\log N)O(logN), insertions are O(1)\mathcal{O}(1)O(1).
 using namespace std;
 
 int main() {
-	unordered_set<int> s;
+  unordered_set<int> s;
 
-	s.insert(40);
-	s.insert(35);
-	s.insert(55);
+  s.insert(40);
+  s.insert(35);
+  s.insert(55);
 
-	set<int>::iterator itr; // defines an iterator of the set
-	cout << "this set weighs " << s.size() << " kg\n";
+  set<int>::iterator itr; // defines an iterator of the set
+  cout << "this set weighs " << s.size() << " kg\n";
 
-	// prints all the elements in the set
-	for (itr = s.begin(); itr != s.end(); s++)
-		cout << *itr << " ";
+  // prints all the elements in the set
+  for (itr = s.begin(); itr != s.end(); s++)
+    cout << *itr << " ";
 
-	s.erase(s.begin(), s.find(55)); // remove 55
+  s.erase(s.begin(), s.find(55)); // remove 55
 
-	// lower_bound() and upper_bound(): returns an iterator to the first element
-	// which is equal to OR before / after the element in the set
-	cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
+  // lower_bound() and upper_bound(): returns an iterator to the first element
+  // which is equal to OR before / after the element in the set
+  cout << *s.lower_bound(37) << " " << *s.upper_bound(37);
 }
 Iterating
 You may have noticed all the examples use something like this to output a data
 structure.
 
 for (itr = s.begin(); itr != s.end(); s++)
-	cout << *itr << " ";
+  cout << *itr << " ";
 There is a shortcut:
 
 for (auto i : s)
-	cout << i << ' ';
+  cout << i << ' ';
 that more people generally like using.
 
 Final Notes
@@ -853,8 +854,8 @@ actually have a day to rest and relax from my busy life because it feels good to
 me and is an enjoyable experience. A de-stresser if you will. */
 
 void end2020(int M, int Q) {
-	eslihash("a"); // inside the .h file
-	eslihash("a");
+  eslihash("a"); // inside the .h file
+  eslihash("a");
 }
 
 /* Dear Joshua,

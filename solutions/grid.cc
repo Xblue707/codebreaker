@@ -3,14 +3,14 @@ using namespace std;
 typedef long long ll;
 typedef long double ld;
 typedef unsigned long long ull;
-#define rep(x, start, end)                                                   \
-	for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
-			 ((start) < (end) ? x++ : x--))
+#define rep(x, start, end) \
+  for (auto x = (start) - ((start) > (end)); x != (end) - ((start) > (end)); \
+       ((start) < (end) ? x++ : x--))
 #define rap(i, v) for (auto i : (v))
-#define setup                       \
-	ios_base::sync_with_stdio(false); \
-	cin.tie(nullptr);                 \
-	cout.tie(nullptr);
+#define setup \
+  ios_base::sync_with_stdio(false); \
+  cin.tie(nullptr); \
+  cout.tie(nullptr);
 #define nl '\n'
 #define pr pair
 #define vc vector
@@ -34,23 +34,23 @@ typedef vector<ii> vii;
 const int mod = 1e9 + 7;
 
 int main() {
-	setup;
-	int n, m;
-	cin >> n >> m;
-	string g[n];
-	int a[n + 2][m + 2];
-	rep(i, 0, n) cin >> g[i];
-	memset(a, 0, sizeof(a));
-	a[1][1] = 1;
-	rep(i, 1, n + 1) {
-		rep(j, 1, m + 1) {
-			if (i == 1 && j == 1)
-				a[i][j] = 1;
-			else if (g[i - 1][j - 1] == '#')
-				continue;
-			else
-				a[i][j] = (a[i - 1][j] % mod + a[i][j - 1] % mod) % mod;  // mod spam
-		}
-	}
-	cout << a[n][m] << nl;
+  setup;
+  int n, m;
+  cin >> n >> m;
+  string g[n];
+  int a[n + 2][m + 2];
+  rep(i, 0, n) cin >> g[i];
+  memset(a, 0, sizeof(a));
+  a[1][1] = 1;
+  rep(i, 1, n + 1) {
+    rep(j, 1, m + 1) {
+      if (i == 1 && j == 1)
+        a[i][j] = 1;
+      else if (g[i - 1][j - 1] == '#')
+        continue;
+      else
+        a[i][j] = (a[i - 1][j] % mod + a[i][j - 1] % mod) % mod; // mod spam
+    }
+  }
+  cout << a[n][m] << nl;
 }
